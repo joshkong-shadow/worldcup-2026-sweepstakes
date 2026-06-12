@@ -1,7 +1,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 // Generates a DEMO results feed (data/sample-matches.json) so we can preview the
-// site and exercise the real scoring pipeline before live data flows.
-// Deterministic (seeded PRNG) — same output every run. NOT real results.
+// site and exercise the real scoring/bracket/group pipeline before live data flows.
+// Deterministic (seeded PRNG). NOT real results.
 //   node scripts/seed.mjs            → full simulated tournament (through the final)
 //   node scripts/seed.mjs --group    → group stage only (early-tournament look)
 // ─────────────────────────────────────────────────────────────────────────────
@@ -13,109 +13,78 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = join(ROOT, "data");
 const GROUP_ONLY = process.argv.includes("--group");
 
-// Tiny seeded PRNG (mulberry32) — deterministic.
 function makeRng(seed) {
   let a = seed >>> 0;
-  return () => {
-    a |= 0; a = (a + 0x6d2b79f5) | 0;
-    let t = Math.imul(a ^ (a >>> 15), 1 | a);
-    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
+  return () => { a |= 0; a = (a + 0x6d2b79f5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; };
 }
 const rng = makeRng(202606);
-const goal = () => Math.floor(rng() * 4); // 0..3
+const goal = () => Math.floor(rng() * 4);
 
 const { teams } = JSON.parse(await readFile(join(DATA, "teams.json"), "utf8"));
-const ids = Object.keys(teams);
 const nameOf = (id) => teams[id].name;
+// 48 participants — Denmark is not in the WC 2026 field, so exclude from the demo bracket.
+const ids = Object.keys(teams).filter((id) => id !== "denmark");
 
 const matches = [];
-const utc = (d, h) => `2026-06-${String(d).padStart(2, "0")}T${String(h).padStart(2, "0")}:00:00Z`;
+const G = "ABCDEFGHIJKL".split("");          // 12 groups
+const groups = {};
+G.forEach((g, i) => { groups[g] = ids.slice(i * 4, i * 4 + 4); });
 
-// ── Group stage: 3 matches per team (synthetic pairings, not the real draw).
-const points = Object.fromEntries(ids.map((id) => [id, { pts: 0, gd: 0 }]));
-for (let r = 0; r < 3; r++) {
-  for (let i = 0; i < ids.length; i++) {
-    const home = ids[i];
-    const away = ids[(i + r + 1) % ids.length];
-    if (home === away) continue;
-    // de-dupe: only emit each unordered pair once per round-offset
-    if (i > (i + r + 1) % ids.length) continue;
+// ── Group stage: round-robin, 3 games per team (6 per group) ─────────────────
+const RR = [[0, 1], [2, 3], [0, 2], [1, 3], [0, 3], [1, 2]];
+const tally = Object.fromEntries(ids.map((id) => [id, { pts: 0, gd: 0, gf: 0 }]));
+let day = 13;
+for (const g of G) {
+  const t = groups[g];
+  RR.forEach(([i, j], k) => {
+    const home = t[i], away = t[j];
     const hg = goal(), ag = goal();
     const winner = hg > ag ? "HOME" : hg < ag ? "AWAY" : "DRAW";
-    matches.push({
-      stage: "GROUP_STAGE", status: "FINISHED",
-      home: nameOf(home), away: nameOf(away),
-      homeGoals: hg, awayGoals: ag, winner, utcDate: utc(13 + r, 18),
-    });
-    points[home].pts += winner === "HOME" ? 3 : winner === "DRAW" ? 1 : 0;
-    points[away].pts += winner === "AWAY" ? 3 : winner === "DRAW" ? 1 : 0;
-    points[home].gd += hg - ag; points[away].gd += ag - hg;
-  }
+    matches.push({ stage: "GROUP_STAGE", group: `GROUP_${g}`, status: "FINISHED",
+      home: nameOf(home), away: nameOf(away), homeGoals: hg, awayGoals: ag, winner,
+      utcDate: `2026-06-${String(13 + (k % 4)).padStart(2, "0")}T18:00:00Z` });
+    tally[home].pts += winner === "HOME" ? 3 : winner === "DRAW" ? 1 : 0;
+    tally[away].pts += winner === "AWAY" ? 3 : winner === "DRAW" ? 1 : 0;
+    tally[home].gd += hg - ag; tally[away].gd += ag - hg; tally[home].gf += hg; tally[away].gf += ag;
+  });
 }
 
 if (!GROUP_ONLY) {
-  // ── Knockouts: top 32 by (pts, gd) enter a single-elim bracket through to a champion.
-  const ranked = [...ids].sort(
-    (a, b) => points[b].pts - points[a].pts || points[b].gd - points[a].gd || a.localeCompare(b)
-  );
-  let bracket = ranked.slice(0, 32);
-  // standard seeding: 1 v 32, 2 v 31, ...
+  // ── Qualifiers: top 2 per group + 8 best 3rd-placed = 32 ────────────────────
+  const rankIn = (arr) => [...arr].sort((a, b) => tally[b].pts - tally[a].pts || tally[b].gd - tally[a].gd || tally[b].gf - tally[a].gf || a.localeCompare(b));
+  const qualified = [], thirds = [];
+  for (const g of G) { const r = rankIn(groups[g]); qualified.push(r[0], r[1]); thirds.push(r[2]); }
+  qualified.push(...rankIn(thirds).slice(0, 8));
+
+  let bracket = rankIn(qualified);                       // seed by group-stage strength
   bracket = bracket.map((_, i) => (i % 2 === 0 ? bracket[i / 2] : bracket[32 - 1 - (i - 1) / 2]));
 
   const rounds = [
-    { stage: "LAST_32", day: 29 },
-    { stage: "LAST_16", day: 3 },        // July
-    { stage: "QUARTER_FINALS", day: 9 },
-    { stage: "SEMI_FINALS", day: 14 },
+    { stage: "LAST_32", date: "2026-06-28" }, { stage: "LAST_16", date: "2026-07-03" },
+    { stage: "QUARTER_FINALS", date: "2026-07-09" }, { stage: "SEMI_FINALS", date: "2026-07-14" },
   ];
-  let current = bracket;
-  const semiLosers = [];
-  for (const { stage, day } of rounds) {
+  let current = bracket; const semiLosers = [];
+  for (const { stage, date } of rounds) {
     const next = [];
     for (let i = 0; i < current.length; i += 2) {
       const home = current[i], away = current[i + 1];
-      let hg = goal(), ag = goal();
-      if (hg === ag) hg += 1; // no draws in knockout demo (advance the "home")
+      let hg = goal(), ag = goal(); if (hg === ag) hg += 1;       // no draws in KO
       const winner = hg > ag ? "HOME" : "AWAY";
-      const month = day > 20 ? "06" : "07";
-      matches.push({
-        stage, status: "FINISHED", home: nameOf(home), away: nameOf(away),
-        homeGoals: hg, awayGoals: ag, winner,
-        utcDate: `2026-${month}-${String(day).padStart(2, "0")}T19:00:00Z`,
-      });
-      const w = winner === "HOME" ? home : away;
-      const l = winner === "HOME" ? away : home;
-      next.push(w);
-      if (stage === "SEMI_FINALS") semiLosers.push(l);
+      matches.push({ stage, group: null, status: "FINISHED", home: nameOf(home), away: nameOf(away),
+        homeGoals: hg, awayGoals: ag, winner, utcDate: `${date}T19:00:00Z` });
+      const w = winner === "HOME" ? home : away, l = winner === "HOME" ? away : home;
+      next.push(w); if (stage === "SEMI_FINALS") semiLosers.push(l);
     }
     current = next;
   }
-  // Third-place playoff
-  {
-    const [home, away] = semiLosers;
-    let hg = goal(), ag = goal(); if (hg === ag) ag += 1;
-    matches.push({
-      stage: "THIRD_PLACE", status: "FINISHED", home: nameOf(home), away: nameOf(away),
-      homeGoals: hg, awayGoals: ag, winner: hg > ag ? "HOME" : "AWAY",
-      utcDate: "2026-07-18T19:00:00Z",
-    });
-  }
-  // Final
-  {
-    const [home, away] = current;
-    let hg = goal(), ag = goal(); if (hg === ag) hg += 1;
-    matches.push({
-      stage: "FINAL", status: "FINISHED", home: nameOf(home), away: nameOf(away),
-      homeGoals: hg, awayGoals: ag, winner: hg > ag ? "HOME" : "AWAY",
-      utcDate: "2026-07-19T19:00:00Z",
-    });
-  }
+  { const [h, a] = semiLosers; let hg = goal(), ag = goal(); if (hg === ag) ag += 1;
+    matches.push({ stage: "THIRD_PLACE", group: null, status: "FINISHED", home: nameOf(h), away: nameOf(a),
+      homeGoals: hg, awayGoals: ag, winner: hg > ag ? "HOME" : "AWAY", utcDate: "2026-07-18T19:00:00Z" }); }
+  { const [h, a] = current; let hg = goal(), ag = goal(); if (hg === ag) hg += 1;
+    matches.push({ stage: "FINAL", group: null, status: "FINISHED", home: nameOf(h), away: nameOf(a),
+      homeGoals: hg, awayGoals: ag, winner: hg > ag ? "HOME" : "AWAY", utcDate: "2026-07-19T19:00:00Z" }); }
 }
 
-await writeFile(
-  join(DATA, "sample-matches.json"),
-  JSON.stringify({ _comment: "DEMO data generated by seed.mjs — not real results", matches }, null, 2) + "\n"
-);
-console.log(`[seed] wrote ${matches.length} demo matches (${GROUP_ONLY ? "group only" : "full tournament"})`);
+await writeFile(join(DATA, "sample-matches.json"),
+  JSON.stringify({ _comment: "DEMO data generated by seed.mjs — not real results", matches }, null, 2) + "\n");
+console.log(`[seed] wrote ${matches.length} demo matches across 12 groups (${GROUP_ONLY ? "group only" : "full tournament"})`);

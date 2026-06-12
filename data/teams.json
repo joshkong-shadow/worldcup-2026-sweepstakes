@@ -8,7 +8,7 @@
     "croatia":            { "name": "Croatia",                "iso": "hr",     "aliases": [] },
     "japan":              { "name": "Japan",                  "iso": "jp",     "aliases": [] },
     "panama":             { "name": "Panama",                 "iso": "pa",     "aliases": [] },
-    "cape-verde":         { "name": "Cape Verde",             "iso": "cv",     "aliases": ["Cabo Verde"] },
+    "cape-verde":         { "name": "Cape Verde",             "iso": "cv",     "aliases": ["Cabo Verde", "Cape Verde Islands"] },
     "belgium":            { "name": "Belgium",                "iso": "be",     "aliases": [] },
     "ecuador":            { "name": "Ecuador",                "iso": "ec",     "aliases": [] },
     "paraguay":           { "name": "Paraguay",               "iso": "py",     "aliases": [] },

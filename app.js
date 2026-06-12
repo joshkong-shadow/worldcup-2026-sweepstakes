@@ -37,19 +37,19 @@ function isEliminated(team) {
   return last.result === "L";
 }
 
-function teamLine(t) {
+function teamLine(t, playerId) {
   const elim = isEliminated(t) ? " eliminated" : "";
   const r = t.record;
   return `
-    <div class="teamline${elim}">
+    <button class="teamline${elim}" data-recap="${playerId}:${t.teamId}" title="See ${t.name}'s match recap">
       <img loading="lazy" src="${FLAG(t.iso)}" alt="${t.name}" onerror="this.style.visibility='hidden'">
       <div>
-        <div class="tl-name">${t.name}</div>
+        <div class="tl-name">${t.name} <span class="tl-look">↗</span></div>
         <div class="tl-rec">${r.w}W · ${r.d}D · ${r.l}L &nbsp;|&nbsp; ${t.matchPoints} match + ${t.stageBonus} bonus</div>
       </div>
       <span class="badge ${badgeClass(t.stage.key)}">${t.stage.label}</span>
       <span class="tl-pts">${t.total}</span>
-    </div>`;
+    </button>`;
 }
 
 function rowHtml(p, i) {
@@ -60,7 +60,7 @@ function rowHtml(p, i) {
   const teams = p.teams
     .slice()
     .sort((a, b) => b.total - a.total)
-    .map(teamLine)
+    .map((t) => teamLine(t, p.id))
     .join("");
   return `
     <li class="row${topClass}" style="animation-delay:${i * 55}ms" data-id="${p.id}">
@@ -114,6 +114,67 @@ function wireRows() {
       if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
     });
   });
+  document.querySelectorAll("[data-recap]").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      const [pid, tid] = btn.dataset.recap.split(":");
+      const player = (window.__DATA?.players || []).find((p) => p.id === pid);
+      const team = player?.teams.find((t) => t.teamId === tid);
+      if (team) openRecap(team, player.name);
+    })
+  );
+}
+
+// ── Match recap modal ────────────────────────────────────────────────────────
+const RESULT_LABEL = { W: "Win", D: "Draw", L: "Loss" };
+function fmtDate(iso) {
+  if (!iso) return "TBD";
+  const d = new Date(iso);
+  return d.toLocaleDateString(undefined, { month: "short", day: "numeric" });
+}
+function openRecap(team, owner) {
+  const finished = team.matches.filter((m) => m.status === "FINISHED");
+  const upcoming = team.matches.filter((m) => m.status !== "FINISHED");
+  const matchRow = (m) => {
+    const res = m.result ? `<span class="res ${m.result}">${RESULT_LABEL[m.result]}</span>` : `<span class="res up">${m.status === "LIVE" ? "Live" : "Upcoming"}</span>`;
+    const score = m.status === "FINISHED" ? `${m.scoreFor}–${m.scoreAgainst}` : "vs";
+    const oppFlag = m.opponentIso ? `<img src="${FLAG(m.opponentIso, 20)}" alt="" onerror="this.style.visibility='hidden'">` : "";
+    return `<div class="recap-row ${m.result || "up"}">
+      <span class="rc-stage">${m.label || "—"}</span>
+      <span class="rc-opp">${oppFlag}<span>${m.opponent || "TBD"}</span></span>
+      <span class="rc-score">${score}</span>
+      ${res}
+      <span class="rc-date">${fmtDate(m.utcDate)}</span>
+    </div>`;
+  };
+  const body = finished.length || upcoming.length
+    ? [...finished, ...upcoming].map(matchRow).join("")
+    : `<p class="recap-empty">No matches played yet.</p>`;
+
+  const r = team.record;
+  const el = document.getElementById("modal");
+  el.innerHTML = `
+    <div class="modal-card" role="dialog" aria-modal="true" aria-label="${team.name} match recap">
+      <button class="modal-x" aria-label="Close">✕</button>
+      <div class="modal-head">
+        <img class="modal-flag" src="${FLAG(team.iso, 80)}" alt="" onerror="this.style.visibility='hidden'">
+        <div>
+          <div class="modal-team">${team.name}</div>
+          <div class="modal-owner">${owner}'s team · <span class="badge ${badgeClass(team.stage.key)}">${team.stage.label}</span></div>
+        </div>
+        <div class="modal-tot"><b>${team.total}</b><small>PTS</small></div>
+      </div>
+      <div class="modal-stats">
+        <span>${r.w}W · ${r.d}D · ${r.l}L</span>
+        <span>${team.matchPoints} match pts</span>
+        <span>+${team.stageBonus} stage bonus</span>
+      </div>
+      <div class="recap-list">${body}</div>
+    </div>`;
+  el.classList.add("show");
+  const close = () => el.classList.remove("show");
+  el.querySelector(".modal-x").addEventListener("click", close);
+  el.onclick = (e) => { if (e.target === el) close(); };
+  document.addEventListener("keydown", function esc(e) { if (e.key === "Escape") { close(); document.removeEventListener("keydown", esc); } });
 }
 
 function setStatus(data) {
@@ -140,6 +201,7 @@ async function load() {
     const res = await fetch(`data/standings.json?t=${Date.now()}`, { cache: "no-store" });
     if (!res.ok) throw new Error(res.status);
     const data = await res.json();
+    window.__DATA = data;
     setStatus(data);
     document.getElementById("podium").innerHTML = podiumHtml(data.players);
     document.getElementById("board").innerHTML = data.players.map(rowHtml).join("");

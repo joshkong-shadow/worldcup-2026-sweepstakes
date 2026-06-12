@@ -47,7 +47,10 @@ results feed (API)  ──┘   (runs in GitHub Actions)         (committed)    
 - `scripts/sources.mjs` — results-feed adapters (football-data.org + a local-file adapter).
 - `scripts/update.mjs` — fetches results, scores everyone, writes `data/standings.json`.
 - `.github/workflows/update.yml` — runs `update.mjs` every 10 minutes and commits changes.
-- `index.html` / `app.js` — the leaderboard (reads `standings.json`).
+- `index.html` / `app.js` — the leaderboard (reads `standings.json`). Click any country to
+  open a **match recap** (every result, opponent, score, W/D/L).
+- `schedule.html` / `schedule.js` — the **Tournament Schedule**: knockout bracket + 12 group
+  tables (reads `tournament.json`), with owner tags showing whose sweepstakes pick each team is.
 - `edit.html` / `edit.js` — the **Edit Teams** roster editor.
 
 ---
@@ -102,8 +105,13 @@ npm test
 
 ## Notes & tweaks
 
-- **Roster:** Wei carries 5 teams by agreement (49 teams total). Wei↔Ben trade
-  (Saudi Arabia ↔ New Zealand) is applied in `data/rosters.json` — adjust in Edit Teams if needed.
+- **Roster:** Wei carries 5 teams by agreement. Wei↔Ben trade (Saudi Arabia ↔ New Zealand)
+  is applied in `data/rosters.json` — adjust in Edit Teams if needed.
+- **⚠ Denmark is not in the WC 2026 field** (confirmed against the official feed — they're not
+  among the 48 qualified teams). Wei drafted Denmark, so that pick scores **0**. All other 48
+  picks are real participants. Swap Denmark for a free team in Edit Teams if you want.
+- **Data source confirmed:** football-data.org's free tier returns all 104 matches with the
+  correct stage labels (`GROUP_STAGE`, `LAST_32` … `FINAL`) and the `/standings` group tables.
 - **Different data source?** Add an adapter in `scripts/sources.mjs` and point `SOURCE` at it.
   A free no-key option is [rezarahiminia/worldcup2026](https://github.com/rezarahiminia/worldcup2026).
 - **Refresh cadence:** change the `cron` in `.github/workflows/update.yml`.

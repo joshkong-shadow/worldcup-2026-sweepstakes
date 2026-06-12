@@ -45,6 +45,7 @@ export async function fetchFootballData(token) {
     }
     return {
       stage,
+      group: m.group || null,
       status,
       home: m.homeTeam?.name ?? m.homeTeam?.shortName ?? null,
       away: m.awayTeam?.name ?? m.awayTeam?.shortName ?? null,
@@ -56,12 +57,35 @@ export async function fetchFootballData(token) {
   });
 }
 
+// ── football-data.org group standings (for the group tables on the schedule page).
+// Returns [{ group: "Group A", table: [{ name, tla, crest, played, won, draw, lost, gf, ga, gd, points, position }] }]
+export async function fetchFootballDataStandings(token) {
+  if (!token) throw new Error("FOOTBALL_DATA_TOKEN is not set");
+  const res = await fetch("https://api.football-data.org/v4/competitions/WC/standings", {
+    headers: { "X-Auth-Token": token },
+  });
+  if (!res.ok) throw new Error(`football-data.org standings ${res.status}`);
+  const json = await res.json();
+  return (json.standings || [])
+    .filter((s) => s.type === "TOTAL")
+    .map((s) => ({
+      group: s.group ? s.group.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()) : "Group",
+      table: (s.table || []).map((r) => ({
+        name: r.team?.name, tla: r.team?.tla, crest: r.team?.crest,
+        played: r.playedGames, won: r.won, draw: r.draw, lost: r.lost,
+        gf: r.goalsFor, ga: r.goalsAgainst, gd: r.goalDifference, points: r.points,
+        position: r.position,
+      })),
+    }));
+}
+
 // ── Local JSON file adapter (for testing / offline seed / manual override).
 // Expects { matches: [ { stage, status, home, away, homeGoals, awayGoals, winner } ] }
 export async function fetchFromFile(fs, path) {
   const json = JSON.parse(await fs.readFile(path, "utf8"));
   return (json.matches || []).map((m) => ({
     stage: normalizeStage(m.stage),
+    group: m.group ?? null,
     status: statusOf(m.status),
     home: m.home,
     away: m.away,

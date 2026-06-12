@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tournament Schedule · World Cup 2026 Sweepstakes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%E2%9A%BD%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="pitch-bg" aria-hidden="true">
+    <div class="floodlight fl-l"></div><div class="floodlight fl-r"></div>
+    <div class="centre-circle"></div><div class="halfway"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="ball">⚽</span>
+      <div class="brand-text">
+        <span class="brand-cup">WORLD CUP 2026</span>
+        <span class="brand-sub">SWEEPSTAKES · TOURNAMENT SCHEDULE</span>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span id="status-pill" class="status-pill"><span class="dot"></span><span id="status-text">Loading…</span></span>
+      <a class="edit-link" href="index.html">🏆 Leaderboard</a>
+    </div>
+  </header>
+
+  <main class="sched-wrap">
+    <div class="sched-title">
+      <h1>TOURNAMENT <span class="accent">SCHEDULE</span></h1>
+      <p>The knockout bracket fills in automatically as results come in. Owned teams show whose sweepstakes pick they are.</p>
+    </div>
+
+    <h2 class="sched-section-h"><span class="pip"></span>Knockout Bracket</h2>
+    <div class="bracket-scroll"><div id="bracket" class="bracket"></div></div>
+    <div id="thirdplace"></div>
+
+    <h2 class="sched-section-h"><span class="pip"></span>Group Stage</h2>
+    <div id="groups" class="groups-grid"></div>
+    <div class="glegend"><span class="sw"></span> Top 2 in each group advance to the Round of 32 (plus the 8 best third-placed teams).</div>
+  </main>
+
+  <script src="schedule.js"></script>
+</body>
+</html>

@@ -11,7 +11,8 @@ import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 import { scoreTeam, STAGE_LABEL } from "./scoring.mjs";
-import { fetchFootballData, fetchFromFile } from "./sources.mjs";
+import { fetchFootballData, fetchFromFile, fetchFootballDataStandings } from "./sources.mjs";
+import { buildTournament } from "./tournament.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const DATA = join(ROOT, "data");
@@ -42,6 +43,17 @@ async function getMatches() {
   }
   console.log("[update] source=football-data.org");
   return fetchFootballData(process.env.FOOTBALL_DATA_TOKEN);
+}
+
+async function getStandings() {
+  const source = process.env.SOURCE || "football-data";
+  if (source !== "football-data") return null; // demo/file path computes groups from matches
+  try {
+    return await fetchFootballDataStandings(process.env.FOOTBALL_DATA_TOKEN);
+  } catch (e) {
+    console.warn("[update] standings fetch failed, will compute from matches:", e.message);
+    return null;
+  }
 }
 
 async function main() {
@@ -128,6 +140,22 @@ async function main() {
     if (p.total !== lastTotal) { lastRank = i + 1; lastTotal = p.total; }
     p.rank = lastRank;
   });
+
+  // ── Tournament view: group tables + knockout bracket (for schedule.html) ──
+  const ownerByTeamId = new Map();
+  for (const p of rosters.players) for (const id of p.teams) ownerByTeamId.set(id, p.name);
+  const resolve = (name) => {
+    const id = index.get(norm(name));
+    return id ? { id, name: teams[id].name, iso: teams[id].iso } : null;
+  };
+  const ownerOf = (id) => ownerByTeamId.get(id) || null;
+  const standingsGroups = await getStandings();
+  const tournament = buildTournament(matches, standingsGroups, resolve, ownerOf);
+  await writeFile(
+    join(DATA, "tournament.json"),
+    JSON.stringify({ generatedAt: new Date().toISOString(), source: process.env.SOURCE || "football-data", ...tournament }, null, 2) + "\n"
+  );
+  console.log(`[update] wrote tournament.json — ${tournament.groups.length} groups, ${Object.keys(tournament.bracket).length} knockout rounds`);
 
   const standings = {
     generatedAt: new Date().toISOString(),
