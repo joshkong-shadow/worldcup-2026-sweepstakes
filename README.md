@@ -5,7 +5,7 @@ Scores every player on their teams' results **plus** how far each team goes, and
 automatically after every match via a scheduled GitHub Action. No server, no database — just
 a static page that reads a JSON file the Action keeps up to date.
 
-**Live site:** _add your GitHub Pages URL here once deployed_
+**Live site:** https://joshkong-shadow.github.io/worldcup-2026-sweepstakes/
 
 ---
 
