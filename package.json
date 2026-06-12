@@ -1,0 +1,12 @@
+{
+  "name": "worldcup-2026-sweepstakes",
+  "version": "1.0.0",
+  "description": "World Cup 2026 sweepstakes leaderboard for the group — auto-updating after every match.",
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/update.mjs",
+    "seed": "node scripts/seed.mjs",
+    "test": "node scripts/scoring.test.mjs"
+  },
+  "license": "MIT"
+}

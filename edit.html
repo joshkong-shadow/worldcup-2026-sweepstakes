@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edit Teams · World Cup 2026 Sweepstakes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%E2%9A%BD%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="pitch-bg" aria-hidden="true">
+    <div class="floodlight fl-l"></div><div class="floodlight fl-r"></div>
+    <div class="centre-circle"></div><div class="halfway"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="ball">⚽</span>
+      <div class="brand-text">
+        <span class="brand-cup">WORLD CUP 2026</span>
+        <span class="brand-sub">SWEEPSTAKES · ROSTER EDITOR</span>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <a class="edit-link" href="index.html">← Leaderboard</a>
+    </div>
+  </header>
+
+  <main class="edit-wrap">
+    <div class="edit-head">
+      <h1>Edit Teams</h1>
+      <p>Drop a team to free it up, then add it to whoever traded for it. The pool below shows any teams not currently owned — handy for a swap. When you're done, <strong>save</strong> so the leaderboard picks up the change.</p>
+    </div>
+
+    <div id="summary" class="summary"></div>
+    <div id="players" class="players"></div>
+
+    <div class="pool">
+      <h3>🔄 Unassigned teams (free to claim)</h3>
+      <div id="pool" class="pool-chips"></div>
+    </div>
+
+    <details class="advanced">
+      <summary>⚙ Advanced: save live to GitHub (optional)</summary>
+      <div class="adv-body">
+        <p class="warn-note">Lets edits go live without a manual commit. Needs a GitHub <strong>fine-grained token</strong> with <em>Contents: Read &amp; write</em> on this repo only. It's stored in this browser (localStorage) — only use a narrowly-scoped token, and only on a device you trust.</p>
+        <div class="grid2">
+          <div><label>Repo (owner/name)</label><input id="gh-repo" placeholder="yourname/worldcup-2026-sweepstakes" /></div>
+          <div><label>Branch</label><input id="gh-branch" placeholder="main" value="main" /></div>
+        </div>
+        <div><label>File path</label><input id="gh-path" value="data/rosters.json" /></div>
+        <div><label>Fine-grained token (contents:write)</label><input id="gh-token" type="password" placeholder="github_pat_…" /></div>
+        <button id="btn-gh" class="btn btn-ghost">Save live to GitHub →</button>
+      </div>
+    </details>
+
+    <div class="actions">
+      <button id="btn-download" class="btn btn-primary">⬇ Download rosters.json</button>
+      <button id="btn-copy" class="btn btn-ghost">Copy JSON</button>
+      <button id="btn-reset" class="btn btn-ghost">Reset changes</button>
+      <span id="save-msg" class="save-msg"></span>
+    </div>
+    <p class="warn-note" style="margin-top:12px">After downloading, replace <code>data/rosters.json</code> in the repo and commit — the next scheduled run (or a manual run of the update job) recomputes the board. The live-save option above does this commit for you.</p>
+  </main>
+
+  <script src="edit.js"></script>
+</body>
+</html>

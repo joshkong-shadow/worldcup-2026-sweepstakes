@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World Cup 2026 · Sweepstakes Leaderboard</title>
+  <meta name="description" content="Live sweepstakes leaderboard for the FIFA World Cup 2026 — auto-updated after every match." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Space+Mono:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ctext y='26' font-size='26'%3E%E2%9A%BD%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="pitch-bg" aria-hidden="true">
+    <div class="floodlight fl-l"></div>
+    <div class="floodlight fl-r"></div>
+    <div class="centre-circle"></div>
+    <div class="halfway"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="ball">⚽</span>
+      <div class="brand-text">
+        <span class="brand-cup">WORLD CUP 2026</span>
+        <span class="brand-sub">SWEEPSTAKES · CAN&nbsp;🇨🇦 · MEX&nbsp;🇲🇽 · USA&nbsp;🇺🇸</span>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <span id="status-pill" class="status-pill"><span class="dot"></span><span id="status-text">Loading…</span></span>
+      <a class="edit-link" href="edit.html">✎ Edit Teams</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="kicker">THE GROUP STANDINGS</p>
+      <h1 class="title">WHO'S<br><span class="title-accent">WINNING</span> THE POOL</h1>
+      <p class="lede">Every player's teams, scored on results <strong>plus</strong> how far they go. Updated automatically after each match finishes.</p>
+      <div id="demo-banner" class="demo-banner" hidden>⚠ Showing <strong>DEMO data</strong> — a simulated tournament so you can see the design. Switch to the live feed before kickoff (see README).</div>
+    </section>
+
+    <section id="podium" class="podium" aria-label="Top three"></section>
+
+    <section class="board-head">
+      <h2>Full Leaderboard</h2>
+      <span class="hint">tap a row to see their teams →</span>
+    </section>
+    <ol id="board" class="board" aria-live="polite"></ol>
+
+    <section class="rules">
+      <h2>How points work</h2>
+      <div class="rules-grid">
+        <div class="rules-card">
+          <h3>⚽ Match points</h3>
+          <ul>
+            <li><b>Win</b><span>3</span></li>
+            <li><b>Draw</b><span>1</span></li>
+            <li><b>Loss</b><span>0</span></li>
+          </ul>
+          <p class="rules-note">Counts in every round. A knockout won on penalties = a Win.</p>
+        </div>
+        <div class="rules-card wide">
+          <h3>🏆 Furthest-stage bonus</h3>
+          <ul class="stage-list">
+            <li><b>Group exit</b><span>0</span></li>
+            <li><b>Round of 32</b><span>5</span></li>
+            <li><b>Round of 16</b><span>10</span></li>
+            <li><b>Quarter-final</b><span>20</span></li>
+            <li><b>Semi-final</b><span>35</span></li>
+            <li><b>4th place</b><span>45</span></li>
+            <li><b>3rd place</b><span>55</span></li>
+            <li><b>Runner-up</b><span>65</span></li>
+            <li class="champ"><b>Champion</b><span>80</span></li>
+          </ul>
+          <p class="rules-note">Your total = match points + best-stage bonus, summed across all your teams.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span id="foot-meta">—</span>
+    <span class="foot-sep">·</span>
+    <span>Auto-updated via GitHub Actions</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

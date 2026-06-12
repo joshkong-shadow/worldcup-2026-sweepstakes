@@ -1,0 +1,18 @@
+{
+  "_comment": "Source of truth for who owns which teams. Edit via the Edit Teams tab, or by hand here. teamId values must match keys in teams.json. The scoring job reads this file every run.",
+  "updatedAt": "2026-06-12",
+  "players": [
+    { "id": "faisal", "name": "Faisal", "teams": ["netherlands", "south-korea", "dr-congo", "canada"] },
+    { "id": "dewan",  "name": "Dewan",  "teams": ["croatia", "japan", "panama", "cape-verde"] },
+    { "id": "riya",   "name": "Riya",   "teams": ["belgium", "ecuador", "paraguay", "ghana"] },
+    { "id": "wei",    "name": "Wei",    "teams": ["portugal", "denmark", "czechia", "uzbekistan", "new-zealand"] },
+    { "id": "sa",     "name": "Sa",     "teams": ["england", "united-states", "scotland", "norway"] },
+    { "id": "siang",  "name": "Siang",  "teams": ["france", "senegal", "australia", "algeria"] },
+    { "id": "bev",    "name": "Bev",    "teams": ["argentina", "turkiye", "south-africa", "cote-divoire"] },
+    { "id": "ben",    "name": "Ben",    "teams": ["colombia", "uruguay", "saudi-arabia", "tunisia"] },
+    { "id": "kris",   "name": "Kris",   "teams": ["brazil", "austria", "sweden", "bosnia-herzegovina"] },
+    { "id": "brian",  "name": "Brian",  "teams": ["spain", "iran", "jordan", "qatar"] },
+    { "id": "josh",   "name": "Josh",   "teams": ["morocco", "mexico", "curacao", "egypt"] },
+    { "id": "king",   "name": "King",   "teams": ["germany", "switzerland", "iraq", "haiti"] }
+  ]
+}

@@ -1,0 +1,47 @@
+name: Update standings
+
+# Auto-recompute the leaderboard from live results and commit standings.json.
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # every 10 minutes (GitHub may delay under load)
+  workflow_dispatch: {}        # lets you run it on demand from the Actions tab
+  push:
+    branches: [main]
+    paths:
+      - "data/rosters.json"    # recompute immediately after a roster edit
+      - "scripts/**"
+
+concurrency:
+  group: update-standings
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Compute standings
+        env:
+          SOURCE: football-data
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: node scripts/update.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "sweepstakes-bot"
+          git config user.email "actions@github.com"
+          if ! git diff --quiet -- data/standings.json; then
+            git add data/standings.json
+            git commit -m "Update standings [skip ci]"
+            git push
+          else
+            echo "No change in standings."
+          fi
