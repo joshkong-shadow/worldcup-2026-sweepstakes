@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-12T06:22:02.890Z",
+  "generatedAt": "2026-06-12T08:00:52.783Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
@@ -2598,27 +2598,6 @@
               "utcDate": "2026-06-27T23:30:00Z"
             }
           ]
-        },
-        {
-          "teamId": "denmark",
-          "name": "Denmark",
-          "iso": "dk",
-          "record": {
-            "w": 0,
-            "d": 0,
-            "l": 0,
-            "points": 0,
-            "played": 0
-          },
-          "matchPoints": 0,
-          "stage": {
-            "key": "GROUP",
-            "label": "Group Stage",
-            "bonus": 0
-          },
-          "stageBonus": 0,
-          "total": 0,
-          "matches": []
         },
         {
           "teamId": "czechia",

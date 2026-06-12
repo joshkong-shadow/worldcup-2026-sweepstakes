@@ -5,7 +5,7 @@
     { "id": "faisal", "name": "Faisal", "teams": ["netherlands", "south-korea", "dr-congo", "canada"] },
     { "id": "dewan",  "name": "Dewan",  "teams": ["croatia", "japan", "panama", "cape-verde"] },
     { "id": "riya",   "name": "Riya",   "teams": ["belgium", "ecuador", "paraguay", "ghana"] },
-    { "id": "wei",    "name": "Wei",    "teams": ["portugal", "denmark", "czechia", "uzbekistan", "new-zealand"] },
+    { "id": "wei",    "name": "Wei",    "teams": ["portugal", "czechia", "uzbekistan", "new-zealand"] },
     { "id": "sa",     "name": "Sa",     "teams": ["england", "united-states", "scotland", "norway"] },
     { "id": "siang",  "name": "Siang",  "teams": ["france", "senegal", "australia", "algeria"] },
     { "id": "bev",    "name": "Bev",    "teams": ["argentina", "turkiye", "south-africa", "cote-divoire"] },

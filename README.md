@@ -105,11 +105,9 @@ npm test
 
 ## Notes & tweaks
 
-- **Roster:** Wei carries 5 teams by agreement. Wei↔Ben trade (Saudi Arabia ↔ New Zealand)
-  is applied in `data/rosters.json` — adjust in Edit Teams if needed.
-- **⚠ Denmark is not in the WC 2026 field** (confirmed against the official feed — they're not
-  among the 48 qualified teams). Wei drafted Denmark, so that pick scores **0**. All other 48
-  picks are real participants. Swap Denmark for a free team in Edit Teams if you want.
+- **Roster:** 48 teams, 4 per player. Wei↔Ben trade (Saudi Arabia ↔ New Zealand) is applied in
+  `data/rosters.json`. Wei originally also held Denmark, but Denmark is **not in the WC 2026
+  field**, so that dead pick was dropped (2026-06-12). All 48 current picks are real participants.
 - **Data source confirmed:** football-data.org's free tier returns all 104 matches with the
   correct stage labels (`GROUP_STAGE`, `LAST_32` … `FINAL`) and the `/standings` group tables.
 - **Different data source?** Add an adapter in `scripts/sources.mjs` and point `SOURCE` at it.
