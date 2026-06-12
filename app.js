@@ -80,26 +80,50 @@ function rowHtml(p, i) {
     </li>`;
 }
 
-function podiumHtml(players) {
-  // visual order: 2nd, 1st, 3rd
-  const top = players.filter((p) => p.rank <= 3);
-  const byRank = (r) => top.find((p) => p.rank === r);
-  const order = [byRank(2), byRank(1), byRank(3)].filter(Boolean);
-  return order
-    .map((p) => {
-      const flags = p.teams
-        .map((t) => `<img loading="lazy" src="${FLAG(t.iso, 20)}" alt="${t.name}" onerror="this.style.visibility='hidden'">`)
-        .join("");
-      return `
-        <div class="pod pod-${p.rank}" style="animation-delay:${p.rank * 90}ms">
-          <span class="rankno">#${p.rank}</span>
-          <div class="medal">${MEDALS[p.rank - 1]}</div>
-          <div class="pod-name">${p.name}</div>
-          <div class="pod-pts">${p.total}<small> PTS</small></div>
-          <div class="pod-flags">${flags}</div>
-        </div>`;
-    })
+// Podium grouped by score level (gold/silver/bronze), so JOINT positions all show.
+// Leaders (top score) sit on top; the next two score levels go in a row below.
+// A level with many tied players collapses to one summary card (avoids 10 cards on 0 pts).
+function podiumCard(p, level, i) {
+  const flags = p.teams
+    .map((t) => `<img loading="lazy" src="${FLAG(t.iso, 20)}" alt="${t.name}" onerror="this.style.visibility='hidden'">`)
     .join("");
+  return `
+    <div class="pod lvl${level}" style="animation-delay:${i * 70}ms">
+      <span class="rankno">#${p.rank}</span>
+      <div class="medal">${MEDALS[level]}</div>
+      <div class="pod-name">${p.name}</div>
+      <div class="pod-pts">${p.total}<small> PTS</small></div>
+      <div class="pod-flags">${flags}</div>
+    </div>`;
+}
+function podiumSummaryCard(list, level) {
+  const names = list.length <= 6 ? list.map((p) => p.name).join(", ") : `${list.length} players tied`;
+  return `
+    <div class="pod lvl${level} pod-summary">
+      <span class="rankno">#${list[0].rank}</span>
+      <div class="medal">${MEDALS[level]}</div>
+      <div class="pod-name">${list.length} tied</div>
+      <div class="pod-pts">${list[0].total}<small> PTS</small></div>
+      <div class="pod-sub">${names}</div>
+    </div>`;
+}
+function renderLevel(list, level) {
+  return list.length > 4 ? podiumSummaryCard(list, level) : list.map((p, i) => podiumCard(p, level, i)).join("");
+}
+function podiumHtml(players) {
+  // Group by actual rank (1/2/3) so joint positions all show and the medal always
+  // matches the position — e.g. two tied for 1st → next player is #3 (bronze), not #2.
+  const top = players.filter((p) => p.rank <= 3);
+  if (!top.length) return "";
+  const ranks = [...new Set(top.map((p) => p.rank))].sort((a, b) => a - b);
+  const leaders = top.filter((p) => p.rank === ranks[0]);
+  let html = `<div class="pod-row leaders">${renderLevel(leaders, ranks[0] - 1)}</div>`;
+  const restHtml = ranks
+    .slice(1)
+    .map((r) => renderLevel(top.filter((p) => p.rank === r), r - 1))
+    .join("");
+  if (restHtml) html += `<div class="pod-row rest">${restHtml}</div>`;
+  return html;
 }
 
 function wireRows() {

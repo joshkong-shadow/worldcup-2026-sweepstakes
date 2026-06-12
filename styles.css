@@ -110,22 +110,30 @@ body {
   color: #ffe6a8; padding: 10px 16px; border-radius: 12px;
 }
 
-/* ── podium ──────────────────────────────────────────────────────────────── */
-.podium { display: grid; grid-template-columns: 1fr 1.15fr 1fr; gap: 12px; align-items: end; margin: 30px 0 36px; }
+/* ── podium (tie-safe: all joint leaders on top, chasers below) ───────────── */
+.podium { display: flex; flex-direction: column; align-items: center; gap: 12px; margin: 30px 0 36px; }
+.pod-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; width: 100%; }
 .pod { position: relative; background: var(--card); border: 1px solid var(--line-strong);
-  border-radius: var(--r); padding: 18px 14px 16px; text-align: center; box-shadow: var(--shadow);
-  backdrop-filter: blur(6px); opacity: 0; transform: translateY(16px); animation: rise .6s forwards; }
+  border-radius: var(--r); padding: 18px 16px 16px; text-align: center; box-shadow: var(--shadow);
+  backdrop-filter: blur(6px); opacity: 0; transform: translateY(16px); animation: rise .6s forwards;
+  flex: 0 1 230px; min-width: 168px; }
+.pod-row.rest .pod { flex-basis: 200px; min-width: 150px; padding: 14px 14px 12px; }
 .pod .medal { font-size: 30px; line-height: 1; }
 .pod .pod-name { font-family: "Anton", sans-serif; font-size: clamp(20px, 4.5vw, 30px); margin-top: 6px; }
+.pod-row.rest .pod .pod-name { font-size: clamp(18px, 4vw, 24px); }
 .pod .pod-pts { font-family: "Space Mono", monospace; font-size: 30px; font-weight: 700; }
+.pod-row.rest .pod .pod-pts { font-size: 24px; }
 .pod .pod-pts small { font-family: "Hanken Grotesk"; font-size: 12px; color: var(--ink-dim); font-weight: 700; letter-spacing: .1em; }
 .pod .pod-flags { display: flex; gap: 4px; justify-content: center; margin-top: 10px; flex-wrap: wrap; }
 .pod .pod-flags img { width: 22px; height: 15px; border-radius: 2px; box-shadow: 0 1px 3px rgba(0,0,0,.5); }
-.pod-1 { transform: translateY(0); border-color: var(--gold); background: linear-gradient(180deg, rgba(255,206,77,0.16), var(--card)); padding-top: 26px; }
-.pod-1 .pod-pts, .pod-1 .pod-name { color: var(--gold); }
-.pod-1 .medal { font-size: 38px; }
-.pod-2 { border-color: rgba(214,228,224,0.4); } .pod-2 .pod-pts { color: var(--silver); }
-.pod-3 { border-color: rgba(224,147,90,0.45); } .pod-3 .pod-pts { color: var(--bronze); }
+.pod .pod-sub { font-size: 11.5px; color: var(--ink-dim); margin-top: 8px; line-height: 1.45; }
+.pod.lvl0 { border-color: var(--gold); background: linear-gradient(180deg, rgba(255,206,77,0.16), var(--card)); }
+.pod.lvl0 .pod-pts, .pod.lvl0 .pod-name { color: var(--gold); }
+.pod-row.leaders .pod.lvl0 { padding-top: 24px; }
+.pod-row.leaders .pod.lvl0 .medal { font-size: 38px; }
+.pod.lvl1 { border-color: rgba(214,228,224,0.4); } .pod.lvl1 .pod-pts { color: var(--silver); }
+.pod.lvl2 { border-color: rgba(224,147,90,0.45); } .pod.lvl2 .pod-pts { color: var(--bronze); }
+.pod.pod-summary .pod-name { font-size: 22px; }
 .pod .rankno { position: absolute; top: 10px; left: 12px; font-family: "Anton"; font-size: 13px; color: var(--ink-dim); }
 @keyframes rise { to { opacity: 1; transform: translateY(0); } }
 
