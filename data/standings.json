@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-12T23:54:32.732Z",
+  "generatedAt": "2026-06-13T02:48:15.407Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 3,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -1986,10 +1986,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 1,
+              "scoreAgainst": 3,
               "opponent": "United States",
               "opponentIso": "us",
               "label": "Group Stage",
@@ -2161,10 +2161,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 3,
+              "scoreAgainst": 1,
               "opponent": "Paraguay",
               "opponentIso": "py",
               "label": "Group Stage",
