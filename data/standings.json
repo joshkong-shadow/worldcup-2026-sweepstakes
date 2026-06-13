@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-13T22:02:31.069Z",
+  "generatedAt": "2026-06-13T23:18:37.269Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 5,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -266,10 +266,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 1,
+              "scoreAgainst": 1,
               "opponent": "Brazil",
               "opponentIso": "br",
               "label": "Group Stage",
@@ -1186,10 +1186,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 1,
+              "scoreAgainst": 1,
               "opponent": "Morocco",
               "opponentIso": "ma",
               "label": "Group Stage",
