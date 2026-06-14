@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-14T16:02:47.998Z",
+  "generatedAt": "2026-06-14T17:41:14.991Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 8,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -606,10 +606,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 1,
+              "scoreAgainst": 1,
               "opponent": "Germany",
               "opponentIso": "de",
               "label": "Group Stage",
@@ -1416,10 +1416,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 1,
+              "scoreAgainst": 1,
               "opponent": "Curaçao",
               "opponentIso": "cw",
               "label": "Group Stage",
