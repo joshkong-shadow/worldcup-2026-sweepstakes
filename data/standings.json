@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-14T23:05:46.426Z",
+  "generatedAt": "2026-06-15T00:21:27.457Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 10,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -2271,7 +2271,7 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
               "scoreFor": null,
               "scoreAgainst": null,
@@ -2391,7 +2391,7 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
               "scoreFor": null,
               "scoreAgainst": null,
