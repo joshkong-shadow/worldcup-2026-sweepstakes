@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-15T05:35:13.245Z",
+  "generatedAt": "2026-06-15T11:33:43.176Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
@@ -240,8 +240,8 @@
     {
       "id": "faisal",
       "name": "Faisal",
-      "total": 4,
-      "matchPoints": 4,
+      "total": 5,
+      "matchPoints": 5,
       "stageBonus": 0,
       "teams": [
         {
@@ -415,26 +415,26 @@
           "iso": "ca",
           "record": {
             "w": 0,
-            "d": 0,
+            "d": 1,
             "l": 0,
-            "points": 0,
-            "played": 0
+            "points": 1,
+            "played": 1
           },
-          "matchPoints": 0,
+          "matchPoints": 1,
           "stage": {
             "key": "GROUP",
             "label": "Group Stage",
             "bonus": 0
           },
           "stageBonus": 0,
-          "total": 0,
+          "total": 1,
           "matches": [
             {
               "stage": "GROUP_STAGE",
               "status": "FINISHED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "result": "D",
+              "scoreFor": 1,
+              "scoreAgainst": 1,
               "opponent": "Bosnia & Herzegovina",
               "opponentIso": "ba",
               "label": "Group Stage",
@@ -459,6 +459,236 @@
               "scoreAgainst": null,
               "opponent": "Switzerland",
               "opponentIso": "ch",
+              "label": "Group Stage",
+              "utcDate": "2026-06-24T19:00:00Z"
+            }
+          ]
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "id": "kris",
+      "name": "Kris",
+      "total": 5,
+      "matchPoints": 5,
+      "stageBonus": 0,
+      "teams": [
+        {
+          "teamId": "brazil",
+          "name": "Brazil",
+          "iso": "br",
+          "record": {
+            "w": 0,
+            "d": 1,
+            "l": 0,
+            "points": 1,
+            "played": 1
+          },
+          "matchPoints": 1,
+          "stage": {
+            "key": "GROUP",
+            "label": "Group Stage",
+            "bonus": 0
+          },
+          "stageBonus": 0,
+          "total": 1,
+          "matches": [
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "D",
+              "scoreFor": 1,
+              "scoreAgainst": 1,
+              "opponent": "Morocco",
+              "opponentIso": "ma",
+              "label": "Group Stage",
+              "utcDate": "2026-06-13T22:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "SCHEDULED",
+              "result": null,
+              "scoreFor": null,
+              "scoreAgainst": null,
+              "opponent": "Haiti",
+              "opponentIso": "ht",
+              "label": "Group Stage",
+              "utcDate": "2026-06-20T00:30:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "SCHEDULED",
+              "result": null,
+              "scoreFor": null,
+              "scoreAgainst": null,
+              "opponent": "Scotland",
+              "opponentIso": "gb-sct",
+              "label": "Group Stage",
+              "utcDate": "2026-06-24T22:00:00Z"
+            }
+          ]
+        },
+        {
+          "teamId": "austria",
+          "name": "Austria",
+          "iso": "at",
+          "record": {
+            "w": 0,
+            "d": 0,
+            "l": 0,
+            "points": 0,
+            "played": 0
+          },
+          "matchPoints": 0,
+          "stage": {
+            "key": "GROUP",
+            "label": "Group Stage",
+            "bonus": 0
+          },
+          "stageBonus": 0,
+          "total": 0,
+          "matches": [
+            {
+              "stage": "GROUP_STAGE",
+              "status": "SCHEDULED",
+              "result": null,
+              "scoreFor": null,
+              "scoreAgainst": null,
+              "opponent": "Jordan",
+              "opponentIso": "jo",
+              "label": "Group Stage",
+              "utcDate": "2026-06-17T04:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "SCHEDULED",
+              "result": null,
+              "scoreFor": null,
+              "scoreAgainst": null,
+              "opponent": "Argentina",
+              "opponentIso": "ar",
+              "label": "Group Stage",
+              "utcDate": "2026-06-22T17:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "SCHEDULED",
+              "result": null,
+              "scoreFor": null,
+              "scoreAgainst": null,
+              "opponent": "Algeria",
+              "opponentIso": "dz",
+              "label": "Group Stage",
+              "utcDate": "2026-06-28T02:00:00Z"
+            }
+          ]
+        },
+        {
+          "teamId": "sweden",
+          "name": "Sweden",
+          "iso": "se",
+          "record": {
+            "w": 1,
+            "d": 0,
+            "l": 0,
+            "points": 3,
+            "played": 1
+          },
+          "matchPoints": 3,
+          "stage": {
+            "key": "GROUP",
+            "label": "Group Stage",
+            "bonus": 0
+          },
+          "stageBonus": 0,
+          "total": 3,
+          "matches": [
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 5,
+              "scoreAgainst": 1,
+              "opponent": "Tunisia",
+              "opponentIso": "tn",
+              "label": "Group Stage",
+              "utcDate": "2026-06-15T02:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "SCHEDULED",
+              "result": null,
+              "scoreFor": null,
+              "scoreAgainst": null,
+              "opponent": "Netherlands",
+              "opponentIso": "nl",
+              "label": "Group Stage",
+              "utcDate": "2026-06-20T17:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "SCHEDULED",
+              "result": null,
+              "scoreFor": null,
+              "scoreAgainst": null,
+              "opponent": "Japan",
+              "opponentIso": "jp",
+              "label": "Group Stage",
+              "utcDate": "2026-06-25T23:00:00Z"
+            }
+          ]
+        },
+        {
+          "teamId": "bosnia-herzegovina",
+          "name": "Bosnia & Herzegovina",
+          "iso": "ba",
+          "record": {
+            "w": 0,
+            "d": 1,
+            "l": 0,
+            "points": 1,
+            "played": 1
+          },
+          "matchPoints": 1,
+          "stage": {
+            "key": "GROUP",
+            "label": "Group Stage",
+            "bonus": 0
+          },
+          "stageBonus": 0,
+          "total": 1,
+          "matches": [
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "D",
+              "scoreFor": 1,
+              "scoreAgainst": 1,
+              "opponent": "Canada",
+              "opponentIso": "ca",
+              "label": "Group Stage",
+              "utcDate": "2026-06-12T19:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "SCHEDULED",
+              "result": null,
+              "scoreFor": null,
+              "scoreAgainst": null,
+              "opponent": "Switzerland",
+              "opponentIso": "ch",
+              "label": "Group Stage",
+              "utcDate": "2026-06-18T19:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "SCHEDULED",
+              "result": null,
+              "scoreFor": null,
+              "scoreAgainst": null,
+              "opponent": "Qatar",
+              "opponentIso": "qa",
               "label": "Group Stage",
               "utcDate": "2026-06-24T19:00:00Z"
             }
@@ -695,7 +925,7 @@
           ]
         }
       ],
-      "rank": 2
+      "rank": 4
     },
     {
       "id": "king",
@@ -925,237 +1155,7 @@
           ]
         }
       ],
-      "rank": 2
-    },
-    {
-      "id": "kris",
-      "name": "Kris",
-      "total": 4,
-      "matchPoints": 4,
-      "stageBonus": 0,
-      "teams": [
-        {
-          "teamId": "brazil",
-          "name": "Brazil",
-          "iso": "br",
-          "record": {
-            "w": 0,
-            "d": 1,
-            "l": 0,
-            "points": 1,
-            "played": 1
-          },
-          "matchPoints": 1,
-          "stage": {
-            "key": "GROUP",
-            "label": "Group Stage",
-            "bonus": 0
-          },
-          "stageBonus": 0,
-          "total": 1,
-          "matches": [
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "D",
-              "scoreFor": 1,
-              "scoreAgainst": 1,
-              "opponent": "Morocco",
-              "opponentIso": "ma",
-              "label": "Group Stage",
-              "utcDate": "2026-06-13T22:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
-              "opponent": "Haiti",
-              "opponentIso": "ht",
-              "label": "Group Stage",
-              "utcDate": "2026-06-20T00:30:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
-              "opponent": "Scotland",
-              "opponentIso": "gb-sct",
-              "label": "Group Stage",
-              "utcDate": "2026-06-24T22:00:00Z"
-            }
-          ]
-        },
-        {
-          "teamId": "austria",
-          "name": "Austria",
-          "iso": "at",
-          "record": {
-            "w": 0,
-            "d": 0,
-            "l": 0,
-            "points": 0,
-            "played": 0
-          },
-          "matchPoints": 0,
-          "stage": {
-            "key": "GROUP",
-            "label": "Group Stage",
-            "bonus": 0
-          },
-          "stageBonus": 0,
-          "total": 0,
-          "matches": [
-            {
-              "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
-              "opponent": "Jordan",
-              "opponentIso": "jo",
-              "label": "Group Stage",
-              "utcDate": "2026-06-17T04:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
-              "opponent": "Argentina",
-              "opponentIso": "ar",
-              "label": "Group Stage",
-              "utcDate": "2026-06-22T17:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
-              "opponent": "Algeria",
-              "opponentIso": "dz",
-              "label": "Group Stage",
-              "utcDate": "2026-06-28T02:00:00Z"
-            }
-          ]
-        },
-        {
-          "teamId": "sweden",
-          "name": "Sweden",
-          "iso": "se",
-          "record": {
-            "w": 1,
-            "d": 0,
-            "l": 0,
-            "points": 3,
-            "played": 1
-          },
-          "matchPoints": 3,
-          "stage": {
-            "key": "GROUP",
-            "label": "Group Stage",
-            "bonus": 0
-          },
-          "stageBonus": 0,
-          "total": 3,
-          "matches": [
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "W",
-              "scoreFor": 5,
-              "scoreAgainst": 1,
-              "opponent": "Tunisia",
-              "opponentIso": "tn",
-              "label": "Group Stage",
-              "utcDate": "2026-06-15T02:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
-              "opponent": "Netherlands",
-              "opponentIso": "nl",
-              "label": "Group Stage",
-              "utcDate": "2026-06-20T17:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
-              "opponent": "Japan",
-              "opponentIso": "jp",
-              "label": "Group Stage",
-              "utcDate": "2026-06-25T23:00:00Z"
-            }
-          ]
-        },
-        {
-          "teamId": "bosnia-herzegovina",
-          "name": "Bosnia & Herzegovina",
-          "iso": "ba",
-          "record": {
-            "w": 0,
-            "d": 0,
-            "l": 0,
-            "points": 0,
-            "played": 0
-          },
-          "matchPoints": 0,
-          "stage": {
-            "key": "GROUP",
-            "label": "Group Stage",
-            "bonus": 0
-          },
-          "stageBonus": 0,
-          "total": 0,
-          "matches": [
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
-              "opponent": "Canada",
-              "opponentIso": "ca",
-              "label": "Group Stage",
-              "utcDate": "2026-06-12T19:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
-              "opponent": "Switzerland",
-              "opponentIso": "ch",
-              "label": "Group Stage",
-              "utcDate": "2026-06-18T19:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
-              "opponent": "Qatar",
-              "opponentIso": "qa",
-              "label": "Group Stage",
-              "utcDate": "2026-06-24T19:00:00Z"
-            }
-          ]
-        }
-      ],
-      "rank": 2
+      "rank": 4
     },
     {
       "id": "bev",
