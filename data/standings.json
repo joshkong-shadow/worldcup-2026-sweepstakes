@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-16T21:45:59.028Z",
+  "generatedAt": "2026-06-16T23:12:23.086Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 17,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -201,10 +201,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 2,
+              "scoreAgainst": 1,
               "opponent": "Iraq",
               "opponentIso": "iq",
               "label": "Group Stage",
@@ -1296,10 +1296,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 1,
+              "scoreAgainst": 2,
               "opponent": "Norway",
               "opponentIso": "no",
               "label": "Group Stage",
