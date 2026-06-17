@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-17T21:47:47.515Z",
+  "generatedAt": "2026-06-17T23:10:10.219Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 21,
+  "finishedMatches": 22,
   "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
       "id": "sa",
       "name": "Sa",
-      "total": 9,
-      "matchPoints": 9,
+      "total": 12,
+      "matchPoints": 12,
       "stageBonus": 0,
       "teams": [
         {
@@ -19,26 +19,26 @@
           "name": "England",
           "iso": "gb-eng",
           "record": {
-            "w": 0,
+            "w": 1,
             "d": 0,
             "l": 0,
-            "points": 0,
-            "played": 0
+            "points": 3,
+            "played": 1
           },
-          "matchPoints": 0,
+          "matchPoints": 3,
           "stage": {
             "key": "GROUP",
             "label": "Group Stage",
             "bonus": 0
           },
           "stageBonus": 0,
-          "total": 0,
+          "total": 3,
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 3,
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 4,
               "scoreAgainst": 2,
               "opponent": "Croatia",
               "opponentIso": "hr",
@@ -2091,9 +2091,9 @@
           "record": {
             "w": 0,
             "d": 0,
-            "l": 0,
+            "l": 1,
             "points": 0,
-            "played": 0
+            "played": 1
           },
           "matchPoints": 0,
           "stage": {
@@ -2106,10 +2106,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "L",
               "scoreFor": 2,
-              "scoreAgainst": 3,
+              "scoreAgainst": 4,
               "opponent": "England",
               "opponentIso": "gb-eng",
               "label": "Group Stage",
@@ -2216,10 +2216,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "Ghana",
               "opponentIso": "gh",
               "label": "Group Stage",
@@ -2731,10 +2731,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "Panama",
               "opponentIso": "pa",
               "label": "Group Stage",
