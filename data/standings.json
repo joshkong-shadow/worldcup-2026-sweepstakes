@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-16T23:12:23.086Z",
+  "generatedAt": "2026-06-17T01:43:07.198Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 17,
+  "finishedMatches": 18,
   "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
       "id": "sa",
       "name": "Sa",
-      "total": 6,
-      "matchPoints": 6,
+      "total": 9,
+      "matchPoints": 9,
       "stageBonus": 0,
       "teams": [
         {
@@ -184,26 +184,26 @@
           "name": "Norway",
           "iso": "no",
           "record": {
-            "w": 0,
+            "w": 1,
             "d": 0,
             "l": 0,
-            "points": 0,
-            "played": 0
+            "points": 3,
+            "played": 1
           },
-          "matchPoints": 0,
+          "matchPoints": 3,
           "stage": {
             "key": "GROUP",
             "label": "Group Stage",
             "bonus": 0
           },
           "stageBonus": 0,
-          "total": 0,
+          "total": 3,
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 2,
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 4,
               "scoreAgainst": 1,
               "opponent": "Iraq",
               "opponentIso": "iq",
@@ -431,10 +431,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 1,
               "opponent": "Argentina",
               "opponentIso": "ar",
               "label": "Group Stage",
@@ -465,7 +465,7 @@
           ]
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "id": "faisal",
@@ -1281,9 +1281,9 @@
           "record": {
             "w": 0,
             "d": 0,
-            "l": 0,
+            "l": 1,
             "points": 0,
-            "played": 0
+            "played": 1
           },
           "matchPoints": 0,
           "stage": {
@@ -1296,10 +1296,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "L",
               "scoreFor": 1,
-              "scoreAgainst": 2,
+              "scoreAgainst": 4,
               "opponent": "Norway",
               "opponentIso": "no",
               "label": "Group Stage",
@@ -1416,10 +1416,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 1,
+              "scoreAgainst": 0,
               "opponent": "Algeria",
               "opponentIso": "dz",
               "label": "Group Stage",
