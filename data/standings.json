@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-17T19:49:46.943Z",
+  "generatedAt": "2026-06-17T21:47:47.515Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 21,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -36,10 +36,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 3,
+              "scoreAgainst": 2,
               "opponent": "Croatia",
               "opponentIso": "hr",
               "label": "Group Stage",
@@ -2106,10 +2106,10 @@
           "matches": [
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 2,
+              "scoreAgainst": 3,
               "opponent": "England",
               "opponentIso": "gb-eng",
               "label": "Group Stage",
