@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-18T22:01:22.996Z",
+  "generatedAt": "2026-06-18T23:57:31.597Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 26,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -1132,10 +1132,10 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 5,
+              "scoreAgainst": 0,
               "opponent": "Qatar",
               "opponentIso": "qa",
               "label": "Group Stage",
@@ -2282,10 +2282,10 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 5,
               "opponent": "Canada",
               "opponentIso": "ca",
               "label": "Group Stage",
