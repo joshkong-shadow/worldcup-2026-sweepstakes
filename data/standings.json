@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-06-19T20:01:10.651Z",
+  "generatedAt": "2026-06-19T21:18:47.482Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 28,
-  "liveMatches": 1,
+  "finishedMatches": 29,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
       "id": "sa",
       "name": "Sa",
-      "total": 12,
-      "matchPoints": 12,
+      "total": 15,
+      "matchPoints": 15,
       "stageBonus": 0,
       "teams": [
         {
@@ -74,20 +74,20 @@
           "name": "United States",
           "iso": "us",
           "record": {
-            "w": 1,
+            "w": 2,
             "d": 0,
             "l": 0,
-            "points": 3,
-            "played": 1
+            "points": 6,
+            "played": 2
           },
-          "matchPoints": 3,
+          "matchPoints": 6,
           "stage": {
             "key": "GROUP",
             "label": "Group Stage",
             "bonus": 0
           },
           "stageBonus": 0,
-          "total": 3,
+          "total": 6,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -102,8 +102,8 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "W",
               "scoreFor": 2,
               "scoreAgainst": 0,
               "opponent": "Australia",
@@ -1511,9 +1511,9 @@
           "record": {
             "w": 1,
             "d": 0,
-            "l": 0,
+            "l": 1,
             "points": 3,
-            "played": 1
+            "played": 2
           },
           "matchPoints": 3,
           "stage": {
@@ -1537,8 +1537,8 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "L",
               "scoreFor": 0,
               "scoreAgainst": 2,
               "opponent": "United States",
