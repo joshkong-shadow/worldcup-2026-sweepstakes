@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-20T16:53:17.610Z",
+  "generatedAt": "2026-06-20T18:06:47.423Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 32,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -470,8 +470,8 @@
     {
       "id": "kris",
       "name": "Kris",
-      "total": 11,
-      "matchPoints": 11,
+      "total": 10,
+      "matchPoints": 10,
       "stageBonus": 0,
       "teams": [
         {
@@ -617,10 +617,10 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 2,
               "opponent": "Netherlands",
               "opponentIso": "nl",
               "label": "Group Stage",
@@ -645,26 +645,26 @@
           "iso": "ba",
           "record": {
             "w": 0,
-            "d": 1,
+            "d": 0,
             "l": 1,
-            "points": 1,
-            "played": 2
+            "points": 0,
+            "played": 1
           },
-          "matchPoints": 1,
+          "matchPoints": 0,
           "stage": {
             "key": "GROUP",
             "label": "Group Stage",
             "bonus": 0
           },
           "stageBonus": 0,
-          "total": 1,
+          "total": 0,
           "matches": [
             {
               "stage": "GROUP_STAGE",
               "status": "FINISHED",
-              "result": "D",
-              "scoreFor": 1,
-              "scoreAgainst": 1,
+              "result": null,
+              "scoreFor": null,
+              "scoreAgainst": null,
               "opponent": "Canada",
               "opponentIso": "ca",
               "label": "Group Stage",
@@ -695,13 +695,13 @@
           ]
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "id": "faisal",
       "name": "Faisal",
-      "total": 9,
-      "matchPoints": 9,
+      "total": 8,
+      "matchPoints": 8,
       "stageBonus": 0,
       "teams": [
         {
@@ -737,10 +737,10 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 2,
+              "scoreAgainst": 0,
               "opponent": "Sweden",
               "opponentIso": "se",
               "label": "Group Stage",
@@ -875,26 +875,26 @@
           "iso": "ca",
           "record": {
             "w": 1,
-            "d": 1,
+            "d": 0,
             "l": 0,
-            "points": 4,
-            "played": 2
+            "points": 3,
+            "played": 1
           },
-          "matchPoints": 4,
+          "matchPoints": 3,
           "stage": {
             "key": "GROUP",
             "label": "Group Stage",
             "bonus": 0
           },
           "stageBonus": 0,
-          "total": 4,
+          "total": 3,
           "matches": [
             {
               "stage": "GROUP_STAGE",
               "status": "FINISHED",
-              "result": "D",
-              "scoreFor": 1,
-              "scoreAgainst": 1,
+              "result": null,
+              "scoreFor": null,
+              "scoreAgainst": null,
               "opponent": "Bosnia & Herzegovina",
               "opponentIso": "ba",
               "label": "Group Stage",
