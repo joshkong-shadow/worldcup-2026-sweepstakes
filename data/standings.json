@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-21T21:39:03.328Z",
+  "generatedAt": "2026-06-21T22:47:21.315Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 38,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -2172,10 +2172,10 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 1,
               "opponent": "Cape Verde",
               "opponentIso": "cv",
               "label": "Group Stage",
@@ -2512,10 +2512,10 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 1,
+              "scoreAgainst": 0,
               "opponent": "Uruguay",
               "opponentIso": "uy",
               "label": "Group Stage",
