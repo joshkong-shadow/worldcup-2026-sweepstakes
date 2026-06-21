@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-21T18:12:17.961Z",
+  "generatedAt": "2026-06-21T20:05:07.907Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 37,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -1197,10 +1197,10 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "Iran",
               "opponentIso": "ir",
               "label": "Group Stage",
@@ -1712,10 +1712,10 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "Belgium",
               "opponentIso": "be",
               "label": "Group Stage",
