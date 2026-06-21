@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-21T20:05:07.907Z",
+  "generatedAt": "2026-06-21T21:39:03.328Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 37,
-  "liveMatches": 1,
+  "finishedMatches": 38,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -1160,8 +1160,8 @@
     {
       "id": "riya",
       "name": "Riya",
-      "total": 8,
-      "matchPoints": 8,
+      "total": 9,
+      "matchPoints": 9,
       "stageBonus": 0,
       "teams": [
         {
@@ -1170,19 +1170,19 @@
           "iso": "be",
           "record": {
             "w": 0,
-            "d": 1,
+            "d": 2,
             "l": 0,
-            "points": 1,
-            "played": 1
+            "points": 2,
+            "played": 2
           },
-          "matchPoints": 1,
+          "matchPoints": 2,
           "stage": {
             "key": "GROUP",
             "label": "Group Stage",
             "bonus": 0
           },
           "stageBonus": 0,
-          "total": 1,
+          "total": 2,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -1197,8 +1197,8 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "D",
               "scoreFor": 0,
               "scoreAgainst": 0,
               "opponent": "Iran",
@@ -1620,8 +1620,8 @@
     {
       "id": "brian",
       "name": "Brian",
-      "total": 6,
-      "matchPoints": 6,
+      "total": 7,
+      "matchPoints": 7,
       "stageBonus": 0,
       "teams": [
         {
@@ -1659,7 +1659,7 @@
               "stage": "GROUP_STAGE",
               "status": "FINISHED",
               "result": "W",
-              "scoreFor": 5,
+              "scoreFor": 4,
               "scoreAgainst": 0,
               "opponent": "Saudi Arabia",
               "opponentIso": "sa",
@@ -1685,19 +1685,19 @@
           "iso": "ir",
           "record": {
             "w": 0,
-            "d": 1,
+            "d": 2,
             "l": 0,
-            "points": 1,
-            "played": 1
+            "points": 2,
+            "played": 2
           },
-          "matchPoints": 1,
+          "matchPoints": 2,
           "stage": {
             "key": "GROUP",
             "label": "Group Stage",
             "bonus": 0
           },
           "stageBonus": 0,
-          "total": 1,
+          "total": 2,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -1712,8 +1712,8 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "D",
               "scoreFor": 0,
               "scoreAgainst": 0,
               "opponent": "Belgium",
@@ -1845,7 +1845,7 @@
           ]
         }
       ],
-      "rank": 8
+      "rank": 7
     },
     {
       "id": "siang",
@@ -2075,7 +2075,7 @@
           ]
         }
       ],
-      "rank": 8
+      "rank": 9
     },
     {
       "id": "ben",
@@ -2230,7 +2230,7 @@
               "status": "FINISHED",
               "result": "L",
               "scoreFor": 0,
-              "scoreAgainst": 5,
+              "scoreAgainst": 4,
               "opponent": "Spain",
               "opponentIso": "es",
               "label": "Group Stage",
