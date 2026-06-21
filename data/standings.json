@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-21T14:59:54.046Z",
+  "generatedAt": "2026-06-21T16:49:36.047Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 36,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -1997,10 +1997,10 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 3,
               "opponent": "Spain",
               "opponentIso": "es",
               "label": "Group Stage",
@@ -2347,10 +2347,10 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 3,
+              "scoreAgainst": 0,
               "opponent": "Saudi Arabia",
               "opponentIso": "sa",
               "label": "Group Stage",
