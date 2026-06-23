@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-23T16:28:52.251Z",
+  "generatedAt": "2026-06-23T18:21:22.367Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 44,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -2577,10 +2577,10 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 3,
+              "scoreAgainst": 0,
               "opponent": "Uzbekistan",
               "opponentIso": "uz",
               "label": "Group Stage",
@@ -2687,10 +2687,10 @@
             },
             {
               "stage": "GROUP_STAGE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 3,
               "opponent": "Portugal",
               "opponentIso": "pt",
               "label": "Group Stage",
