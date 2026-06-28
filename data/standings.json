@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-28T17:53:47.810Z",
+  "generatedAt": "2026-06-28T19:09:59.282Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 72,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -738,10 +738,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "Canada",
               "opponentIso": "ca",
               "label": "Round of 32",
@@ -1867,10 +1867,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "South Africa",
               "opponentIso": "za",
               "label": "Round of 32",
