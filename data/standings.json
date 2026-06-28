@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-28T20:36:21.684Z",
+  "generatedAt": "2026-06-28T21:43:35.111Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 72,
-  "liveMatches": 1,
+  "finishedMatches": 73,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -690,9 +690,9 @@
           "record": {
             "w": 1,
             "d": 1,
-            "l": 1,
+            "l": 2,
             "points": 4,
-            "played": 3
+            "played": 4
           },
           "matchPoints": 4,
           "stage": {
@@ -738,10 +738,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "L",
               "scoreFor": 0,
-              "scoreAgainst": 0,
+              "scoreAgainst": 1,
               "opponent": "Canada",
               "opponentIso": "ca",
               "label": "Round of 32",
@@ -1621,8 +1621,8 @@
     {
       "id": "faisal",
       "name": "Faisal",
-      "total": 33,
-      "matchPoints": 18,
+      "total": 36,
+      "matchPoints": 21,
       "stageBonus": 15,
       "teams": [
         {
@@ -1817,20 +1817,20 @@
           "name": "Canada",
           "iso": "ca",
           "record": {
-            "w": 1,
+            "w": 2,
             "d": 1,
             "l": 1,
-            "points": 4,
-            "played": 3
+            "points": 7,
+            "played": 4
           },
-          "matchPoints": 4,
+          "matchPoints": 7,
           "stage": {
             "key": "LAST_32",
             "label": "Round of 32",
             "bonus": 5
           },
           "stageBonus": 5,
-          "total": 9,
+          "total": 12,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -1867,9 +1867,9 @@
             },
             {
               "stage": "LAST_32",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 0,
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 1,
               "scoreAgainst": 0,
               "opponent": "South Africa",
               "opponentIso": "za",
