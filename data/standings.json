@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-29T20:03:31.698Z",
+  "generatedAt": "2026-06-29T21:42:24.230Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 74,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -1812,10 +1812,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 1,
+              "scoreAgainst": 0,
               "opponent": "Germany",
               "opponentIso": "de",
               "label": "Round of 32",
@@ -2217,10 +2217,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 1,
               "opponent": "Paraguay",
               "opponentIso": "py",
               "label": "Round of 32",
