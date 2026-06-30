@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-30T01:51:14.865Z",
+  "generatedAt": "2026-06-30T06:06:04.445Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 75,
-  "liveMatches": 1,
+  "finishedMatches": 76,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -343,10 +343,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "LIVE",
+              "status": "FINISHED",
               "result": null,
-              "scoreFor": 0,
-              "scoreAgainst": 0,
+              "scoreFor": 4,
+              "scoreAgainst": 4,
               "opponent": "Morocco",
               "opponentIso": "ma",
               "label": "Round of 32",
@@ -1154,10 +1154,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "LIVE",
+              "status": "FINISHED",
               "result": null,
-              "scoreFor": 0,
-              "scoreAgainst": 0,
+              "scoreFor": 4,
+              "scoreAgainst": 4,
               "opponent": "Netherlands",
               "opponentIso": "nl",
               "label": "Round of 32",
