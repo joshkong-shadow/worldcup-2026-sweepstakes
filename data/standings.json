@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-02T19:53:57.086Z",
+  "generatedAt": "2026-07-02T20:58:06.727Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 82,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -1308,10 +1308,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
               "scoreFor": 0,
-              "scoreAgainst": 1,
+              "scoreAgainst": 3,
               "opponent": "Spain",
               "opponentIso": "es",
               "label": "Round of 32",
@@ -2809,9 +2809,9 @@
             },
             {
               "stage": "LAST_32",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": 1,
+              "scoreFor": 3,
               "scoreAgainst": 0,
               "opponent": "Austria",
               "opponentIso": "at",
