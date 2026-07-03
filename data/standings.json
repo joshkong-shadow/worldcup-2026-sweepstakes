@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-03T04:54:24.219Z",
+  "generatedAt": "2026-07-03T07:57:11.048Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 84,
-  "liveMatches": 1,
+  "finishedMatches": 85,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -1107,9 +1107,9 @@
           "record": {
             "w": 1,
             "d": 1,
-            "l": 1,
+            "l": 2,
             "points": 4,
-            "played": 3
+            "played": 4
           },
           "matchPoints": 4,
           "stage": {
@@ -1155,8 +1155,8 @@
             },
             {
               "stage": "LAST_32",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "L",
               "scoreFor": 0,
               "scoreAgainst": 2,
               "opponent": "Switzerland",
@@ -2257,8 +2257,8 @@
     {
       "id": "king",
       "name": "King",
-      "total": 23,
-      "matchPoints": 13,
+      "total": 26,
+      "matchPoints": 16,
       "stageBonus": 10,
       "teams": [
         {
@@ -2332,20 +2332,20 @@
           "name": "Switzerland",
           "iso": "ch",
           "record": {
-            "w": 2,
+            "w": 3,
             "d": 1,
             "l": 0,
-            "points": 7,
-            "played": 3
+            "points": 10,
+            "played": 4
           },
-          "matchPoints": 7,
+          "matchPoints": 10,
           "stage": {
             "key": "LAST_32",
             "label": "Round of 32",
             "bonus": 5
           },
           "stageBonus": 5,
-          "total": 12,
+          "total": 15,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -2382,8 +2382,8 @@
             },
             {
               "stage": "LAST_32",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "W",
               "scoreFor": 2,
               "scoreAgainst": 0,
               "opponent": "Algeria",
