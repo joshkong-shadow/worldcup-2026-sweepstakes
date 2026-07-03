@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-03T21:42:34.013Z",
+  "generatedAt": "2026-07-03T22:44:05.898Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 86,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -1790,10 +1790,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 1,
+              "scoreAgainst": 0,
               "opponent": "Cape Verde",
               "opponentIso": "cv",
               "label": "Round of 32",
@@ -2240,10 +2240,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 1,
               "opponent": "Argentina",
               "opponentIso": "ar",
               "label": "Round of 32",
