@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-03T01:08:11.140Z",
+  "generatedAt": "2026-07-03T04:54:24.219Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 83,
+  "finishedMatches": 84,
   "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
@@ -1155,10 +1155,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 2,
               "opponent": "Switzerland",
               "opponentIso": "ch",
               "label": "Round of 32",
@@ -2005,9 +2005,9 @@
           "record": {
             "w": 2,
             "d": 0,
-            "l": 1,
+            "l": 2,
             "points": 6,
-            "played": 3
+            "played": 4
           },
           "matchPoints": 6,
           "stage": {
@@ -2053,9 +2053,9 @@
             },
             {
               "stage": "LAST_32",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 2,
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 1,
               "scoreAgainst": 2,
               "opponent": "Portugal",
               "opponentIso": "pt",
@@ -2382,10 +2382,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 2,
+              "scoreAgainst": 0,
               "opponent": "Algeria",
               "opponentIso": "dz",
               "label": "Round of 32",
@@ -2991,8 +2991,8 @@
     {
       "id": "wei",
       "name": "Wei",
-      "total": 12,
-      "matchPoints": 7,
+      "total": 15,
+      "matchPoints": 10,
       "stageBonus": 5,
       "teams": [
         {
@@ -3000,20 +3000,20 @@
           "name": "Portugal",
           "iso": "pt",
           "record": {
-            "w": 1,
+            "w": 2,
             "d": 2,
             "l": 0,
-            "points": 5,
-            "played": 3
+            "points": 8,
+            "played": 4
           },
-          "matchPoints": 5,
+          "matchPoints": 8,
           "stage": {
             "key": "LAST_32",
             "label": "Round of 32",
             "bonus": 5
           },
           "stageBonus": 5,
-          "total": 10,
+          "total": 13,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -3050,10 +3050,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "W",
               "scoreFor": 2,
-              "scoreAgainst": 2,
+              "scoreAgainst": 1,
               "opponent": "Croatia",
               "opponentIso": "hr",
               "label": "Round of 32",
