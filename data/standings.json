@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-03T17:55:28.081Z",
+  "generatedAt": "2026-07-03T19:11:25.783Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 85,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -574,10 +574,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 1,
+              "scoreAgainst": 0,
               "opponent": "Australia",
               "opponentIso": "au",
               "label": "Round of 32",
@@ -1089,10 +1089,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 1,
               "opponent": "Egypt",
               "opponentIso": "eg",
               "label": "Round of 32",
