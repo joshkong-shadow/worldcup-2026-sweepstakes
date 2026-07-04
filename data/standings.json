@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-07-04T18:39:24.935Z",
+  "generatedAt": "2026-07-04T19:51:59.891Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 88,
-  "liveMatches": 1,
+  "finishedMatches": 89,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
       "id": "josh",
       "name": "Josh",
-      "total": 61,
-      "matchPoints": 31,
+      "total": 64,
+      "matchPoints": 34,
       "stageBonus": 30,
       "teams": [
         {
@@ -19,20 +19,20 @@
           "name": "Morocco",
           "iso": "ma",
           "record": {
-            "w": 3,
+            "w": 4,
             "d": 1,
             "l": 0,
-            "points": 10,
-            "played": 4
+            "points": 13,
+            "played": 5
           },
-          "matchPoints": 10,
+          "matchPoints": 13,
           "stage": {
             "key": "LAST_16",
             "label": "Round of 16",
             "bonus": 10
           },
           "stageBonus": 10,
-          "total": 20,
+          "total": 23,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -80,9 +80,9 @@
             },
             {
               "stage": "LAST_16",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 1,
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 3,
               "scoreAgainst": 0,
               "opponent": "Canada",
               "opponentIso": "ca",
@@ -597,7 +597,7 @@
           ]
         }
       ],
-      "rank": 1
+      "rank": 2
     },
     {
       "id": "riya",
@@ -1940,9 +1940,9 @@
           "record": {
             "w": 2,
             "d": 1,
-            "l": 1,
+            "l": 2,
             "points": 7,
-            "played": 4
+            "played": 5
           },
           "matchPoints": 7,
           "stage": {
@@ -1999,10 +1999,10 @@
             },
             {
               "stage": "LAST_16",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "L",
               "scoreFor": 0,
-              "scoreAgainst": 1,
+              "scoreAgainst": 3,
               "opponent": "Morocco",
               "opponentIso": "ma",
               "label": "Round of 16",
