@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-04T20:48:31.063Z",
+  "generatedAt": "2026-07-04T21:42:40.645Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 89,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -815,10 +815,10 @@
             },
             {
               "stage": "LAST_16",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "France",
               "opponentIso": "fr",
               "label": "Round of 16",
@@ -968,10 +968,10 @@
             },
             {
               "stage": "LAST_16",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "Paraguay",
               "opponentIso": "py",
               "label": "Round of 16",
