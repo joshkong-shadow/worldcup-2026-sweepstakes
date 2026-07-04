@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-04T22:41:21.529Z",
+  "generatedAt": "2026-07-04T23:45:19.465Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 89,
-  "liveMatches": 1,
+  "finishedMatches": 90,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -756,9 +756,9 @@
           "record": {
             "w": 2,
             "d": 1,
-            "l": 1,
+            "l": 2,
             "points": 7,
-            "played": 4
+            "played": 5
           },
           "matchPoints": 7,
           "stage": {
@@ -815,8 +815,8 @@
             },
             {
               "stage": "LAST_16",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "L",
               "scoreFor": 0,
               "scoreAgainst": 1,
               "opponent": "France",
@@ -898,8 +898,8 @@
     {
       "id": "siang",
       "name": "Siang",
-      "total": 48,
-      "matchPoints": 23,
+      "total": 51,
+      "matchPoints": 26,
       "stageBonus": 25,
       "teams": [
         {
@@ -907,20 +907,20 @@
           "name": "France",
           "iso": "fr",
           "record": {
-            "w": 4,
+            "w": 5,
             "d": 0,
             "l": 0,
-            "points": 12,
-            "played": 4
+            "points": 15,
+            "played": 5
           },
-          "matchPoints": 12,
+          "matchPoints": 15,
           "stage": {
             "key": "LAST_16",
             "label": "Round of 16",
             "bonus": 10
           },
           "stageBonus": 10,
-          "total": 22,
+          "total": 25,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -968,8 +968,8 @@
             },
             {
               "stage": "LAST_16",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "W",
               "scoreFor": 1,
               "scoreAgainst": 0,
               "opponent": "Paraguay",
