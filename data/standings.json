@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-04T01:19:27.758Z",
+  "generatedAt": "2026-07-04T04:56:34.278Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 87,
+  "finishedMatches": 88,
   "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
@@ -822,9 +822,9 @@
           "record": {
             "w": 1,
             "d": 1,
-            "l": 1,
+            "l": 2,
             "points": 4,
-            "played": 3
+            "played": 4
           },
           "matchPoints": 4,
           "stage": {
@@ -870,10 +870,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "SCHEDULED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 0,
+              "scoreAgainst": 1,
               "opponent": "Colombia",
               "opponentIso": "co",
               "label": "Round of 32",
@@ -2507,6 +2507,247 @@
       "rank": 9
     },
     {
+      "id": "ben",
+      "name": "Ben",
+      "total": 19,
+      "matchPoints": 14,
+      "stageBonus": 5,
+      "teams": [
+        {
+          "teamId": "colombia",
+          "name": "Colombia",
+          "iso": "co",
+          "record": {
+            "w": 3,
+            "d": 1,
+            "l": 0,
+            "points": 10,
+            "played": 4
+          },
+          "matchPoints": 10,
+          "stage": {
+            "key": "LAST_32",
+            "label": "Round of 32",
+            "bonus": 5
+          },
+          "stageBonus": 5,
+          "total": 15,
+          "matches": [
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 3,
+              "scoreAgainst": 1,
+              "opponent": "Uzbekistan",
+              "opponentIso": "uz",
+              "label": "Group Stage",
+              "utcDate": "2026-06-18T02:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 1,
+              "scoreAgainst": 0,
+              "opponent": "DR Congo",
+              "opponentIso": "cd",
+              "label": "Group Stage",
+              "utcDate": "2026-06-24T02:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "D",
+              "scoreFor": 0,
+              "scoreAgainst": 0,
+              "opponent": "Portugal",
+              "opponentIso": "pt",
+              "label": "Group Stage",
+              "utcDate": "2026-06-27T23:30:00Z"
+            },
+            {
+              "stage": "LAST_32",
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 1,
+              "scoreAgainst": 0,
+              "opponent": "Ghana",
+              "opponentIso": "gh",
+              "label": "Round of 32",
+              "utcDate": "2026-07-04T01:30:00Z"
+            }
+          ]
+        },
+        {
+          "teamId": "uruguay",
+          "name": "Uruguay",
+          "iso": "uy",
+          "record": {
+            "w": 0,
+            "d": 2,
+            "l": 1,
+            "points": 2,
+            "played": 3
+          },
+          "matchPoints": 2,
+          "stage": {
+            "key": "GROUP",
+            "label": "Group Stage",
+            "bonus": 0
+          },
+          "stageBonus": 0,
+          "total": 2,
+          "matches": [
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "D",
+              "scoreFor": 1,
+              "scoreAgainst": 1,
+              "opponent": "Saudi Arabia",
+              "opponentIso": "sa",
+              "label": "Group Stage",
+              "utcDate": "2026-06-15T22:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "D",
+              "scoreFor": 2,
+              "scoreAgainst": 2,
+              "opponent": "Cape Verde",
+              "opponentIso": "cv",
+              "label": "Group Stage",
+              "utcDate": "2026-06-21T22:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 0,
+              "scoreAgainst": 1,
+              "opponent": "Spain",
+              "opponentIso": "es",
+              "label": "Group Stage",
+              "utcDate": "2026-06-27T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "teamId": "saudi-arabia",
+          "name": "Saudi Arabia",
+          "iso": "sa",
+          "record": {
+            "w": 0,
+            "d": 2,
+            "l": 1,
+            "points": 2,
+            "played": 3
+          },
+          "matchPoints": 2,
+          "stage": {
+            "key": "GROUP",
+            "label": "Group Stage",
+            "bonus": 0
+          },
+          "stageBonus": 0,
+          "total": 2,
+          "matches": [
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "D",
+              "scoreFor": 1,
+              "scoreAgainst": 1,
+              "opponent": "Uruguay",
+              "opponentIso": "uy",
+              "label": "Group Stage",
+              "utcDate": "2026-06-15T22:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 0,
+              "scoreAgainst": 4,
+              "opponent": "Spain",
+              "opponentIso": "es",
+              "label": "Group Stage",
+              "utcDate": "2026-06-21T16:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "D",
+              "scoreFor": 0,
+              "scoreAgainst": 0,
+              "opponent": "Cape Verde",
+              "opponentIso": "cv",
+              "label": "Group Stage",
+              "utcDate": "2026-06-27T00:00:00Z"
+            }
+          ]
+        },
+        {
+          "teamId": "tunisia",
+          "name": "Tunisia",
+          "iso": "tn",
+          "record": {
+            "w": 0,
+            "d": 0,
+            "l": 3,
+            "points": 0,
+            "played": 3
+          },
+          "matchPoints": 0,
+          "stage": {
+            "key": "GROUP",
+            "label": "Group Stage",
+            "bonus": 0
+          },
+          "stageBonus": 0,
+          "total": 0,
+          "matches": [
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 1,
+              "scoreAgainst": 5,
+              "opponent": "Sweden",
+              "opponentIso": "se",
+              "label": "Group Stage",
+              "utcDate": "2026-06-15T02:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 0,
+              "scoreAgainst": 4,
+              "opponent": "Japan",
+              "opponentIso": "jp",
+              "label": "Group Stage",
+              "utcDate": "2026-06-21T04:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 1,
+              "scoreAgainst": 3,
+              "opponent": "Netherlands",
+              "opponentIso": "nl",
+              "label": "Group Stage",
+              "utcDate": "2026-06-25T23:00:00Z"
+            }
+          ]
+        }
+      ],
+      "rank": 10
+    },
+    {
       "id": "brian",
       "name": "Brian",
       "total": 19,
@@ -2746,247 +2987,6 @@
         }
       ],
       "rank": 10
-    },
-    {
-      "id": "ben",
-      "name": "Ben",
-      "total": 16,
-      "matchPoints": 11,
-      "stageBonus": 5,
-      "teams": [
-        {
-          "teamId": "colombia",
-          "name": "Colombia",
-          "iso": "co",
-          "record": {
-            "w": 2,
-            "d": 1,
-            "l": 0,
-            "points": 7,
-            "played": 3
-          },
-          "matchPoints": 7,
-          "stage": {
-            "key": "LAST_32",
-            "label": "Round of 32",
-            "bonus": 5
-          },
-          "stageBonus": 5,
-          "total": 12,
-          "matches": [
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "W",
-              "scoreFor": 3,
-              "scoreAgainst": 1,
-              "opponent": "Uzbekistan",
-              "opponentIso": "uz",
-              "label": "Group Stage",
-              "utcDate": "2026-06-18T02:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "W",
-              "scoreFor": 1,
-              "scoreAgainst": 0,
-              "opponent": "DR Congo",
-              "opponentIso": "cd",
-              "label": "Group Stage",
-              "utcDate": "2026-06-24T02:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "D",
-              "scoreFor": 0,
-              "scoreAgainst": 0,
-              "opponent": "Portugal",
-              "opponentIso": "pt",
-              "label": "Group Stage",
-              "utcDate": "2026-06-27T23:30:00Z"
-            },
-            {
-              "stage": "LAST_32",
-              "status": "SCHEDULED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
-              "opponent": "Ghana",
-              "opponentIso": "gh",
-              "label": "Round of 32",
-              "utcDate": "2026-07-04T01:30:00Z"
-            }
-          ]
-        },
-        {
-          "teamId": "uruguay",
-          "name": "Uruguay",
-          "iso": "uy",
-          "record": {
-            "w": 0,
-            "d": 2,
-            "l": 1,
-            "points": 2,
-            "played": 3
-          },
-          "matchPoints": 2,
-          "stage": {
-            "key": "GROUP",
-            "label": "Group Stage",
-            "bonus": 0
-          },
-          "stageBonus": 0,
-          "total": 2,
-          "matches": [
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "D",
-              "scoreFor": 1,
-              "scoreAgainst": 1,
-              "opponent": "Saudi Arabia",
-              "opponentIso": "sa",
-              "label": "Group Stage",
-              "utcDate": "2026-06-15T22:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "D",
-              "scoreFor": 2,
-              "scoreAgainst": 2,
-              "opponent": "Cape Verde",
-              "opponentIso": "cv",
-              "label": "Group Stage",
-              "utcDate": "2026-06-21T22:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "L",
-              "scoreFor": 0,
-              "scoreAgainst": 1,
-              "opponent": "Spain",
-              "opponentIso": "es",
-              "label": "Group Stage",
-              "utcDate": "2026-06-27T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "teamId": "saudi-arabia",
-          "name": "Saudi Arabia",
-          "iso": "sa",
-          "record": {
-            "w": 0,
-            "d": 2,
-            "l": 1,
-            "points": 2,
-            "played": 3
-          },
-          "matchPoints": 2,
-          "stage": {
-            "key": "GROUP",
-            "label": "Group Stage",
-            "bonus": 0
-          },
-          "stageBonus": 0,
-          "total": 2,
-          "matches": [
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "D",
-              "scoreFor": 1,
-              "scoreAgainst": 1,
-              "opponent": "Uruguay",
-              "opponentIso": "uy",
-              "label": "Group Stage",
-              "utcDate": "2026-06-15T22:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "L",
-              "scoreFor": 0,
-              "scoreAgainst": 4,
-              "opponent": "Spain",
-              "opponentIso": "es",
-              "label": "Group Stage",
-              "utcDate": "2026-06-21T16:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "D",
-              "scoreFor": 0,
-              "scoreAgainst": 0,
-              "opponent": "Cape Verde",
-              "opponentIso": "cv",
-              "label": "Group Stage",
-              "utcDate": "2026-06-27T00:00:00Z"
-            }
-          ]
-        },
-        {
-          "teamId": "tunisia",
-          "name": "Tunisia",
-          "iso": "tn",
-          "record": {
-            "w": 0,
-            "d": 0,
-            "l": 3,
-            "points": 0,
-            "played": 3
-          },
-          "matchPoints": 0,
-          "stage": {
-            "key": "GROUP",
-            "label": "Group Stage",
-            "bonus": 0
-          },
-          "stageBonus": 0,
-          "total": 0,
-          "matches": [
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "L",
-              "scoreFor": 1,
-              "scoreAgainst": 5,
-              "opponent": "Sweden",
-              "opponentIso": "se",
-              "label": "Group Stage",
-              "utcDate": "2026-06-15T02:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "L",
-              "scoreFor": 0,
-              "scoreAgainst": 4,
-              "opponent": "Japan",
-              "opponentIso": "jp",
-              "label": "Group Stage",
-              "utcDate": "2026-06-21T04:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "L",
-              "scoreFor": 1,
-              "scoreAgainst": 3,
-              "opponent": "Netherlands",
-              "opponentIso": "nl",
-              "label": "Group Stage",
-              "utcDate": "2026-06-25T23:00:00Z"
-            }
-          ]
-        }
-      ],
-      "rank": 11
     },
     {
       "id": "wei",
