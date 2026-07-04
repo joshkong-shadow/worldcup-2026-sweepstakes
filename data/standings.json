@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-03T23:45:35.257Z",
+  "generatedAt": "2026-07-04T01:19:27.758Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 86,
-  "liveMatches": 1,
+  "finishedMatches": 87,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -1731,8 +1731,8 @@
     {
       "id": "bev",
       "name": "Bev",
-      "total": 37,
-      "matchPoints": 22,
+      "total": 40,
+      "matchPoints": 25,
       "stageBonus": 15,
       "teams": [
         {
@@ -1740,20 +1740,20 @@
           "name": "Argentina",
           "iso": "ar",
           "record": {
-            "w": 3,
+            "w": 4,
             "d": 0,
             "l": 0,
-            "points": 9,
-            "played": 3
+            "points": 12,
+            "played": 4
           },
-          "matchPoints": 9,
+          "matchPoints": 12,
           "stage": {
             "key": "LAST_32",
             "label": "Round of 32",
             "bonus": 5
           },
           "stageBonus": 5,
-          "total": 14,
+          "total": 17,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -1790,10 +1790,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 1,
-              "scoreAgainst": 1,
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 3,
+              "scoreAgainst": 2,
               "opponent": "Cape Verde",
               "opponentIso": "cv",
               "label": "Round of 32",
@@ -2192,9 +2192,9 @@
           "record": {
             "w": 0,
             "d": 3,
-            "l": 0,
+            "l": 1,
             "points": 3,
-            "played": 3
+            "played": 4
           },
           "matchPoints": 3,
           "stage": {
@@ -2240,10 +2240,10 @@
             },
             {
               "stage": "LAST_32",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 1,
-              "scoreAgainst": 1,
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 2,
+              "scoreAgainst": 3,
               "opponent": "Argentina",
               "opponentIso": "ar",
               "label": "Round of 32",
