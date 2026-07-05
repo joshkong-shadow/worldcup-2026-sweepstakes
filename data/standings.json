@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-05T20:02:15.537Z",
+  "generatedAt": "2026-07-05T21:15:53.219Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 90,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -596,10 +596,10 @@
             },
             {
               "stage": "LAST_16",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "Brazil",
               "opponentIso": "br",
               "label": "Round of 16",
@@ -1275,10 +1275,10 @@
             },
             {
               "stage": "LAST_16",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "Norway",
               "opponentIso": "no",
               "label": "Round of 16",
