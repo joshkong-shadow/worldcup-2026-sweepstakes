@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-05T21:15:53.219Z",
+  "generatedAt": "2026-07-05T22:15:14.706Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 90,
-  "liveMatches": 1,
+  "finishedMatches": 91,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -317,8 +317,8 @@
     {
       "id": "sa",
       "name": "Sa",
-      "total": 61,
-      "matchPoints": 31,
+      "total": 64,
+      "matchPoints": 34,
       "stageBonus": 30,
       "teams": [
         {
@@ -535,20 +535,20 @@
           "name": "Norway",
           "iso": "no",
           "record": {
-            "w": 3,
+            "w": 4,
             "d": 0,
             "l": 1,
-            "points": 9,
-            "played": 4
+            "points": 12,
+            "played": 5
           },
-          "matchPoints": 9,
+          "matchPoints": 12,
           "stage": {
             "key": "LAST_16",
             "label": "Round of 16",
             "bonus": 10
           },
           "stageBonus": 10,
-          "total": 19,
+          "total": 22,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -596,10 +596,10 @@
             },
             {
               "stage": "LAST_16",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 0,
-              "scoreAgainst": 0,
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 2,
+              "scoreAgainst": 1,
               "opponent": "Brazil",
               "opponentIso": "br",
               "label": "Round of 16",
@@ -904,7 +904,7 @@
           ]
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "id": "riya",
@@ -1216,9 +1216,9 @@
           "record": {
             "w": 3,
             "d": 1,
-            "l": 0,
+            "l": 1,
             "points": 10,
-            "played": 4
+            "played": 5
           },
           "matchPoints": 10,
           "stage": {
@@ -1275,10 +1275,10 @@
             },
             {
               "stage": "LAST_16",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 0,
-              "scoreAgainst": 0,
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 1,
+              "scoreAgainst": 2,
               "opponent": "Norway",
               "opponentIso": "no",
               "label": "Round of 16",
