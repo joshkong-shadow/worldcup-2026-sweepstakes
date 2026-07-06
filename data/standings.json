@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-05T23:29:09.170Z",
+  "generatedAt": "2026-07-06T01:16:33.448Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 91,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -168,14 +168,14 @@
             },
             {
               "stage": "LAST_16",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "England",
               "opponentIso": "gb-eng",
               "label": "Round of 16",
-              "utcDate": "2026-07-06T00:00:00Z"
+              "utcDate": "2026-07-06T01:00:00Z"
             }
           ]
         },
@@ -387,14 +387,14 @@
             },
             {
               "stage": "LAST_16",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "Mexico",
               "opponentIso": "mx",
               "label": "Round of 16",
-              "utcDate": "2026-07-06T00:00:00Z"
+              "utcDate": "2026-07-06T01:00:00Z"
             }
           ]
         },
