@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-06T01:16:33.448Z",
+  "generatedAt": "2026-07-06T05:38:23.723Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 91,
-  "liveMatches": 1,
+  "finishedMatches": 92,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -109,9 +109,9 @@
           "record": {
             "w": 4,
             "d": 0,
-            "l": 0,
+            "l": 1,
             "points": 12,
-            "played": 4
+            "played": 5
           },
           "matchPoints": 12,
           "stage": {
@@ -168,10 +168,10 @@
             },
             {
               "stage": "LAST_16",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 0,
-              "scoreAgainst": 0,
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 2,
+              "scoreAgainst": 3,
               "opponent": "England",
               "opponentIso": "gb-eng",
               "label": "Round of 16",
@@ -317,8 +317,8 @@
     {
       "id": "sa",
       "name": "Sa",
-      "total": 64,
-      "matchPoints": 34,
+      "total": 67,
+      "matchPoints": 37,
       "stageBonus": 30,
       "teams": [
         {
@@ -326,20 +326,20 @@
           "name": "England",
           "iso": "gb-eng",
           "record": {
-            "w": 3,
+            "w": 4,
             "d": 1,
             "l": 0,
-            "points": 10,
-            "played": 4
+            "points": 13,
+            "played": 5
           },
-          "matchPoints": 10,
+          "matchPoints": 13,
           "stage": {
             "key": "LAST_16",
             "label": "Round of 16",
             "bonus": 10
           },
           "stageBonus": 10,
-          "total": 20,
+          "total": 23,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -387,10 +387,10 @@
             },
             {
               "stage": "LAST_16",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 0,
-              "scoreAgainst": 0,
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 3,
+              "scoreAgainst": 2,
               "opponent": "Mexico",
               "opponentIso": "mx",
               "label": "Round of 16",
