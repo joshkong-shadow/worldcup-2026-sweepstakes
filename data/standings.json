@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-06T23:19:37.322Z",
+  "generatedAt": "2026-07-07T01:11:03.241Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 93,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -168,10 +168,10 @@
             },
             {
               "stage": "LAST_16",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 1,
+              "scoreAgainst": 2,
               "opponent": "Belgium",
               "opponentIso": "be",
               "label": "Round of 16",
@@ -1001,10 +1001,10 @@
             },
             {
               "stage": "LAST_16",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 2,
+              "scoreAgainst": 1,
               "opponent": "United States",
               "opponentIso": "us",
               "label": "Round of 16",
