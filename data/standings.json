@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-07T22:44:59.126Z",
+  "generatedAt": "2026-07-07T23:39:04.229Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 95,
-  "liveMatches": 1,
+  "finishedMatches": 96,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -2470,10 +2470,10 @@
             },
             {
               "stage": "LAST_16",
-              "status": "LIVE",
+              "status": "FINISHED",
               "result": null,
-              "scoreFor": 0,
-              "scoreAgainst": 0,
+              "scoreFor": 4,
+              "scoreAgainst": 3,
               "opponent": "Colombia",
               "opponentIso": "co",
               "label": "Round of 16",
@@ -2930,10 +2930,10 @@
             },
             {
               "stage": "LAST_16",
-              "status": "LIVE",
+              "status": "FINISHED",
               "result": null,
-              "scoreFor": 0,
-              "scoreAgainst": 0,
+              "scoreFor": 3,
+              "scoreAgainst": 4,
               "opponent": "Switzerland",
               "opponentIso": "ch",
               "label": "Round of 16",
