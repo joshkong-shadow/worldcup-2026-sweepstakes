@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-07T01:11:03.241Z",
+  "generatedAt": "2026-07-07T05:09:03.794Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 93,
-  "liveMatches": 1,
+  "finishedMatches": 94,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -109,9 +109,9 @@
           "record": {
             "w": 3,
             "d": 0,
-            "l": 1,
+            "l": 2,
             "points": 9,
-            "played": 4
+            "played": 5
           },
           "matchPoints": 9,
           "stage": {
@@ -168,10 +168,10 @@
             },
             {
               "stage": "LAST_16",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "L",
               "scoreFor": 1,
-              "scoreAgainst": 2,
+              "scoreAgainst": 4,
               "opponent": "Belgium",
               "opponentIso": "be",
               "label": "Round of 16",
@@ -931,8 +931,8 @@
     {
       "id": "riya",
       "name": "Riya",
-      "total": 53,
-      "matchPoints": 23,
+      "total": 56,
+      "matchPoints": 26,
       "stageBonus": 30,
       "teams": [
         {
@@ -940,20 +940,20 @@
           "name": "Belgium",
           "iso": "be",
           "record": {
-            "w": 2,
+            "w": 3,
             "d": 2,
             "l": 0,
-            "points": 8,
-            "played": 4
+            "points": 11,
+            "played": 5
           },
-          "matchPoints": 8,
+          "matchPoints": 11,
           "stage": {
             "key": "LAST_16",
             "label": "Round of 16",
             "bonus": 10
           },
           "stageBonus": 10,
-          "total": 18,
+          "total": 21,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -1001,9 +1001,9 @@
             },
             {
               "stage": "LAST_16",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 2,
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 4,
               "scoreAgainst": 1,
               "opponent": "United States",
               "opponentIso": "us",
