@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-10T04:18:05.852Z",
+  "generatedAt": "2026-07-10T07:55:19.973Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
@@ -326,6 +326,313 @@
       "rank": 1
     },
     {
+      "id": "siang",
+      "name": "Siang",
+      "total": 79,
+      "matchPoints": 29,
+      "stageBonus": 50,
+      "teams": [
+        {
+          "teamId": "france",
+          "name": "France",
+          "iso": "fr",
+          "record": {
+            "w": 6,
+            "d": 0,
+            "l": 0,
+            "points": 18,
+            "played": 6
+          },
+          "matchPoints": 18,
+          "stage": {
+            "key": "SEMI_FINALS",
+            "label": "Semi-finalist",
+            "bonus": 35
+          },
+          "stageBonus": 35,
+          "total": 53,
+          "matches": [
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 3,
+              "scoreAgainst": 1,
+              "opponent": "Senegal",
+              "opponentIso": "sn",
+              "label": "Group Stage",
+              "utcDate": "2026-06-16T19:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 3,
+              "scoreAgainst": 0,
+              "opponent": "Iraq",
+              "opponentIso": "iq",
+              "label": "Group Stage",
+              "utcDate": "2026-06-22T21:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 4,
+              "scoreAgainst": 1,
+              "opponent": "Norway",
+              "opponentIso": "no",
+              "label": "Group Stage",
+              "utcDate": "2026-06-26T19:00:00Z"
+            },
+            {
+              "stage": "LAST_32",
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 3,
+              "scoreAgainst": 0,
+              "opponent": "Sweden",
+              "opponentIso": "se",
+              "label": "Round of 32",
+              "utcDate": "2026-06-30T21:00:00Z"
+            },
+            {
+              "stage": "LAST_16",
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 1,
+              "scoreAgainst": 0,
+              "opponent": "Paraguay",
+              "opponentIso": "py",
+              "label": "Round of 16",
+              "utcDate": "2026-07-04T21:00:00Z"
+            },
+            {
+              "stage": "QUARTER_FINALS",
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 2,
+              "scoreAgainst": 0,
+              "opponent": "Morocco",
+              "opponentIso": "ma",
+              "label": "Quarter-final",
+              "utcDate": "2026-07-09T20:00:00Z"
+            },
+            {
+              "stage": "SEMI_FINALS",
+              "status": "SCHEDULED",
+              "result": null,
+              "scoreFor": null,
+              "scoreAgainst": null,
+              "opponent": null,
+              "opponentIso": null,
+              "label": "Semi-final",
+              "utcDate": "2026-07-14T19:00:00Z"
+            }
+          ]
+        },
+        {
+          "teamId": "senegal",
+          "name": "Senegal",
+          "iso": "sn",
+          "record": {
+            "w": 1,
+            "d": 0,
+            "l": 3,
+            "points": 3,
+            "played": 4
+          },
+          "matchPoints": 3,
+          "stage": {
+            "key": "LAST_32",
+            "label": "Round of 32",
+            "bonus": 5
+          },
+          "stageBonus": 5,
+          "total": 8,
+          "matches": [
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 1,
+              "scoreAgainst": 3,
+              "opponent": "France",
+              "opponentIso": "fr",
+              "label": "Group Stage",
+              "utcDate": "2026-06-16T19:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 2,
+              "scoreAgainst": 3,
+              "opponent": "Norway",
+              "opponentIso": "no",
+              "label": "Group Stage",
+              "utcDate": "2026-06-23T00:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 5,
+              "scoreAgainst": 0,
+              "opponent": "Iraq",
+              "opponentIso": "iq",
+              "label": "Group Stage",
+              "utcDate": "2026-06-26T19:00:00Z"
+            },
+            {
+              "stage": "LAST_32",
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 2,
+              "scoreAgainst": 3,
+              "opponent": "Belgium",
+              "opponentIso": "be",
+              "label": "Round of 32",
+              "utcDate": "2026-07-01T20:00:00Z"
+            }
+          ]
+        },
+        {
+          "teamId": "australia",
+          "name": "Australia",
+          "iso": "au",
+          "record": {
+            "w": 1,
+            "d": 1,
+            "l": 2,
+            "points": 4,
+            "played": 4
+          },
+          "matchPoints": 4,
+          "stage": {
+            "key": "LAST_32",
+            "label": "Round of 32",
+            "bonus": 5
+          },
+          "stageBonus": 5,
+          "total": 9,
+          "matches": [
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 2,
+              "scoreAgainst": 0,
+              "opponent": "Türkiye",
+              "opponentIso": "tr",
+              "label": "Group Stage",
+              "utcDate": "2026-06-14T04:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 0,
+              "scoreAgainst": 2,
+              "opponent": "United States",
+              "opponentIso": "us",
+              "label": "Group Stage",
+              "utcDate": "2026-06-19T19:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "D",
+              "scoreFor": 0,
+              "scoreAgainst": 0,
+              "opponent": "Paraguay",
+              "opponentIso": "py",
+              "label": "Group Stage",
+              "utcDate": "2026-06-26T02:00:00Z"
+            },
+            {
+              "stage": "LAST_32",
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 3,
+              "scoreAgainst": 5,
+              "opponent": "Egypt",
+              "opponentIso": "eg",
+              "label": "Round of 32",
+              "utcDate": "2026-07-03T18:00:00Z"
+            }
+          ]
+        },
+        {
+          "teamId": "algeria",
+          "name": "Algeria",
+          "iso": "dz",
+          "record": {
+            "w": 1,
+            "d": 1,
+            "l": 2,
+            "points": 4,
+            "played": 4
+          },
+          "matchPoints": 4,
+          "stage": {
+            "key": "LAST_32",
+            "label": "Round of 32",
+            "bonus": 5
+          },
+          "stageBonus": 5,
+          "total": 9,
+          "matches": [
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 0,
+              "scoreAgainst": 3,
+              "opponent": "Argentina",
+              "opponentIso": "ar",
+              "label": "Group Stage",
+              "utcDate": "2026-06-17T01:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 2,
+              "scoreAgainst": 1,
+              "opponent": "Jordan",
+              "opponentIso": "jo",
+              "label": "Group Stage",
+              "utcDate": "2026-06-23T03:00:00Z"
+            },
+            {
+              "stage": "GROUP_STAGE",
+              "status": "FINISHED",
+              "result": "D",
+              "scoreFor": 3,
+              "scoreAgainst": 3,
+              "opponent": "Austria",
+              "opponentIso": "at",
+              "label": "Group Stage",
+              "utcDate": "2026-06-28T02:00:00Z"
+            },
+            {
+              "stage": "LAST_32",
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 0,
+              "scoreAgainst": 2,
+              "opponent": "Switzerland",
+              "opponentIso": "ch",
+              "label": "Round of 32",
+              "utcDate": "2026-07-03T03:00:00Z"
+            }
+          ]
+        }
+      ],
+      "rank": 2
+    },
+    {
       "id": "josh",
       "name": "Josh",
       "total": 74,
@@ -630,7 +937,7 @@
           ]
         }
       ],
-      "rank": 2
+      "rank": 3
     },
     {
       "id": "riya",
@@ -933,302 +1240,6 @@
               "opponentIso": "co",
               "label": "Round of 32",
               "utcDate": "2026-07-04T01:30:00Z"
-            }
-          ]
-        }
-      ],
-      "rank": 3
-    },
-    {
-      "id": "siang",
-      "name": "Siang",
-      "total": 64,
-      "matchPoints": 29,
-      "stageBonus": 35,
-      "teams": [
-        {
-          "teamId": "france",
-          "name": "France",
-          "iso": "fr",
-          "record": {
-            "w": 6,
-            "d": 0,
-            "l": 0,
-            "points": 18,
-            "played": 6
-          },
-          "matchPoints": 18,
-          "stage": {
-            "key": "QUARTER_FINALS",
-            "label": "Quarter-finalist",
-            "bonus": 20
-          },
-          "stageBonus": 20,
-          "total": 38,
-          "matches": [
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "W",
-              "scoreFor": 3,
-              "scoreAgainst": 1,
-              "opponent": "Senegal",
-              "opponentIso": "sn",
-              "label": "Group Stage",
-              "utcDate": "2026-06-16T19:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "W",
-              "scoreFor": 3,
-              "scoreAgainst": 0,
-              "opponent": "Iraq",
-              "opponentIso": "iq",
-              "label": "Group Stage",
-              "utcDate": "2026-06-22T21:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "W",
-              "scoreFor": 4,
-              "scoreAgainst": 1,
-              "opponent": "Norway",
-              "opponentIso": "no",
-              "label": "Group Stage",
-              "utcDate": "2026-06-26T19:00:00Z"
-            },
-            {
-              "stage": "LAST_32",
-              "status": "FINISHED",
-              "result": "W",
-              "scoreFor": 3,
-              "scoreAgainst": 0,
-              "opponent": "Sweden",
-              "opponentIso": "se",
-              "label": "Round of 32",
-              "utcDate": "2026-06-30T21:00:00Z"
-            },
-            {
-              "stage": "LAST_16",
-              "status": "FINISHED",
-              "result": "W",
-              "scoreFor": 1,
-              "scoreAgainst": 0,
-              "opponent": "Paraguay",
-              "opponentIso": "py",
-              "label": "Round of 16",
-              "utcDate": "2026-07-04T21:00:00Z"
-            },
-            {
-              "stage": "QUARTER_FINALS",
-              "status": "FINISHED",
-              "result": "W",
-              "scoreFor": 2,
-              "scoreAgainst": 0,
-              "opponent": "Morocco",
-              "opponentIso": "ma",
-              "label": "Quarter-final",
-              "utcDate": "2026-07-09T20:00:00Z"
-            }
-          ]
-        },
-        {
-          "teamId": "senegal",
-          "name": "Senegal",
-          "iso": "sn",
-          "record": {
-            "w": 1,
-            "d": 0,
-            "l": 3,
-            "points": 3,
-            "played": 4
-          },
-          "matchPoints": 3,
-          "stage": {
-            "key": "LAST_32",
-            "label": "Round of 32",
-            "bonus": 5
-          },
-          "stageBonus": 5,
-          "total": 8,
-          "matches": [
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "L",
-              "scoreFor": 1,
-              "scoreAgainst": 3,
-              "opponent": "France",
-              "opponentIso": "fr",
-              "label": "Group Stage",
-              "utcDate": "2026-06-16T19:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "L",
-              "scoreFor": 2,
-              "scoreAgainst": 3,
-              "opponent": "Norway",
-              "opponentIso": "no",
-              "label": "Group Stage",
-              "utcDate": "2026-06-23T00:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "W",
-              "scoreFor": 5,
-              "scoreAgainst": 0,
-              "opponent": "Iraq",
-              "opponentIso": "iq",
-              "label": "Group Stage",
-              "utcDate": "2026-06-26T19:00:00Z"
-            },
-            {
-              "stage": "LAST_32",
-              "status": "FINISHED",
-              "result": "L",
-              "scoreFor": 2,
-              "scoreAgainst": 3,
-              "opponent": "Belgium",
-              "opponentIso": "be",
-              "label": "Round of 32",
-              "utcDate": "2026-07-01T20:00:00Z"
-            }
-          ]
-        },
-        {
-          "teamId": "australia",
-          "name": "Australia",
-          "iso": "au",
-          "record": {
-            "w": 1,
-            "d": 1,
-            "l": 2,
-            "points": 4,
-            "played": 4
-          },
-          "matchPoints": 4,
-          "stage": {
-            "key": "LAST_32",
-            "label": "Round of 32",
-            "bonus": 5
-          },
-          "stageBonus": 5,
-          "total": 9,
-          "matches": [
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "W",
-              "scoreFor": 2,
-              "scoreAgainst": 0,
-              "opponent": "Türkiye",
-              "opponentIso": "tr",
-              "label": "Group Stage",
-              "utcDate": "2026-06-14T04:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "L",
-              "scoreFor": 0,
-              "scoreAgainst": 2,
-              "opponent": "United States",
-              "opponentIso": "us",
-              "label": "Group Stage",
-              "utcDate": "2026-06-19T19:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "D",
-              "scoreFor": 0,
-              "scoreAgainst": 0,
-              "opponent": "Paraguay",
-              "opponentIso": "py",
-              "label": "Group Stage",
-              "utcDate": "2026-06-26T02:00:00Z"
-            },
-            {
-              "stage": "LAST_32",
-              "status": "FINISHED",
-              "result": "L",
-              "scoreFor": 3,
-              "scoreAgainst": 5,
-              "opponent": "Egypt",
-              "opponentIso": "eg",
-              "label": "Round of 32",
-              "utcDate": "2026-07-03T18:00:00Z"
-            }
-          ]
-        },
-        {
-          "teamId": "algeria",
-          "name": "Algeria",
-          "iso": "dz",
-          "record": {
-            "w": 1,
-            "d": 1,
-            "l": 2,
-            "points": 4,
-            "played": 4
-          },
-          "matchPoints": 4,
-          "stage": {
-            "key": "LAST_32",
-            "label": "Round of 32",
-            "bonus": 5
-          },
-          "stageBonus": 5,
-          "total": 9,
-          "matches": [
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "L",
-              "scoreFor": 0,
-              "scoreAgainst": 3,
-              "opponent": "Argentina",
-              "opponentIso": "ar",
-              "label": "Group Stage",
-              "utcDate": "2026-06-17T01:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "W",
-              "scoreFor": 2,
-              "scoreAgainst": 1,
-              "opponent": "Jordan",
-              "opponentIso": "jo",
-              "label": "Group Stage",
-              "utcDate": "2026-06-23T03:00:00Z"
-            },
-            {
-              "stage": "GROUP_STAGE",
-              "status": "FINISHED",
-              "result": "D",
-              "scoreFor": 3,
-              "scoreAgainst": 3,
-              "opponent": "Austria",
-              "opponentIso": "at",
-              "label": "Group Stage",
-              "utcDate": "2026-06-28T02:00:00Z"
-            },
-            {
-              "stage": "LAST_32",
-              "status": "FINISHED",
-              "result": "L",
-              "scoreFor": 0,
-              "scoreAgainst": 2,
-              "opponent": "Switzerland",
-              "opponentIso": "ch",
-              "label": "Round of 32",
-              "utcDate": "2026-07-03T03:00:00Z"
             }
           ]
         }
