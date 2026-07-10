@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-10T20:21:03.701Z",
+  "generatedAt": "2026-07-10T21:33:07.772Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 97,
-  "liveMatches": 1,
+  "finishedMatches": 98,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -953,9 +953,9 @@
           "record": {
             "w": 3,
             "d": 2,
-            "l": 0,
+            "l": 1,
             "points": 11,
-            "played": 5
+            "played": 6
           },
           "matchPoints": 11,
           "stage": {
@@ -1023,10 +1023,10 @@
             },
             {
               "stage": "QUARTER_FINALS",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "L",
               "scoreFor": 1,
-              "scoreAgainst": 1,
+              "scoreAgainst": 2,
               "opponent": "Spain",
               "opponentIso": "es",
               "label": "Quarter-final",
@@ -2367,8 +2367,8 @@
     {
       "id": "brian",
       "name": "Brian",
-      "total": 37,
-      "matchPoints": 17,
+      "total": 40,
+      "matchPoints": 20,
       "stageBonus": 20,
       "teams": [
         {
@@ -2376,20 +2376,20 @@
           "name": "Spain",
           "iso": "es",
           "record": {
-            "w": 4,
+            "w": 5,
             "d": 1,
             "l": 0,
-            "points": 13,
-            "played": 5
+            "points": 16,
+            "played": 6
           },
-          "matchPoints": 13,
+          "matchPoints": 16,
           "stage": {
             "key": "QUARTER_FINALS",
             "label": "Quarter-finalist",
             "bonus": 20
           },
           "stageBonus": 20,
-          "total": 33,
+          "total": 36,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -2448,9 +2448,9 @@
             },
             {
               "stage": "QUARTER_FINALS",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 1,
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 2,
               "scoreAgainst": 1,
               "opponent": "Belgium",
               "opponentIso": "be",
