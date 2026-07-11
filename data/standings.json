@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-07-11T20:32:18.661Z",
+  "generatedAt": "2026-07-11T21:28:09.657Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 98,
-  "liveMatches": 0,
+  "finishedMatches": 97,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
       "id": "sa",
       "name": "Sa",
-      "total": 87,
-      "matchPoints": 37,
+      "total": 84,
+      "matchPoints": 34,
       "stageBonus": 50,
       "teams": [
         {
@@ -19,20 +19,20 @@
           "name": "England",
           "iso": "gb-eng",
           "record": {
-            "w": 4,
+            "w": 3,
             "d": 1,
             "l": 0,
-            "points": 13,
-            "played": 5
+            "points": 10,
+            "played": 4
           },
-          "matchPoints": 13,
+          "matchPoints": 10,
           "stage": {
             "key": "QUARTER_FINALS",
             "label": "Quarter-finalist",
             "bonus": 20
           },
           "stageBonus": 20,
-          "total": 33,
+          "total": 30,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -80,8 +80,8 @@
             },
             {
               "stage": "LAST_16",
-              "status": "FINISHED",
-              "result": "W",
+              "status": "SCHEDULED",
+              "result": null,
               "scoreFor": 3,
               "scoreAgainst": 2,
               "opponent": "Mexico",
@@ -91,10 +91,10 @@
             },
             {
               "stage": "QUARTER_FINALS",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "Norway",
               "opponentIso": "no",
               "label": "Quarter-final",
@@ -311,10 +311,10 @@
             },
             {
               "stage": "QUARTER_FINALS",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "England",
               "opponentIso": "gb-eng",
               "label": "Quarter-final",
@@ -734,9 +734,9 @@
           "record": {
             "w": 4,
             "d": 0,
-            "l": 1,
+            "l": 0,
             "points": 12,
-            "played": 5
+            "played": 4
           },
           "matchPoints": 12,
           "stage": {
@@ -793,8 +793,8 @@
             },
             {
               "stage": "LAST_16",
-              "status": "FINISHED",
-              "result": "L",
+              "status": "SCHEDULED",
+              "result": null,
               "scoreFor": 2,
               "scoreAgainst": 3,
               "opponent": "England",
