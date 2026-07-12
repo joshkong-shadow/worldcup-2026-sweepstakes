@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-12T01:02:00.218Z",
+  "generatedAt": "2026-07-12T04:32:55.757Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 98,
+  "finishedMatches": 99,
   "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
@@ -1249,8 +1249,8 @@
     {
       "id": "bev",
       "name": "Bev",
-      "total": 58,
-      "matchPoints": 28,
+      "total": 61,
+      "matchPoints": 31,
       "stageBonus": 30,
       "teams": [
         {
@@ -1258,20 +1258,20 @@
           "name": "Argentina",
           "iso": "ar",
           "record": {
-            "w": 5,
+            "w": 6,
             "d": 0,
             "l": 0,
-            "points": 15,
-            "played": 5
+            "points": 18,
+            "played": 6
           },
-          "matchPoints": 15,
+          "matchPoints": 18,
           "stage": {
             "key": "QUARTER_FINALS",
             "label": "Quarter-finalist",
             "bonus": 20
           },
           "stageBonus": 20,
-          "total": 35,
+          "total": 38,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -1330,10 +1330,10 @@
             },
             {
               "stage": "QUARTER_FINALS",
-              "status": "SCHEDULED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 3,
+              "scoreAgainst": 1,
               "opponent": "Switzerland",
               "opponentIso": "ch",
               "label": "Quarter-final",
@@ -2170,9 +2170,9 @@
           "record": {
             "w": 4,
             "d": 1,
-            "l": 0,
+            "l": 1,
             "points": 13,
-            "played": 5
+            "played": 6
           },
           "matchPoints": 13,
           "stage": {
@@ -2240,10 +2240,10 @@
             },
             {
               "stage": "QUARTER_FINALS",
-              "status": "SCHEDULED",
-              "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 1,
+              "scoreAgainst": 3,
               "opponent": "Argentina",
               "opponentIso": "ar",
               "label": "Quarter-final",
