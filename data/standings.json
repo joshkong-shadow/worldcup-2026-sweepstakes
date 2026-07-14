@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-14T20:53:41.686Z",
+  "generatedAt": "2026-07-14T21:52:25.325Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 100,
-  "liveMatches": 1,
+  "finishedMatches": 101,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -350,9 +350,9 @@
           "record": {
             "w": 6,
             "d": 0,
-            "l": 0,
+            "l": 1,
             "points": 18,
-            "played": 6
+            "played": 7
           },
           "matchPoints": 18,
           "stage": {
@@ -431,8 +431,8 @@
             },
             {
               "stage": "SEMI_FINALS",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "L",
               "scoreFor": 0,
               "scoreAgainst": 2,
               "opponent": "Spain",
@@ -1556,8 +1556,8 @@
     {
       "id": "brian",
       "name": "Brian",
-      "total": 55,
-      "matchPoints": 20,
+      "total": 58,
+      "matchPoints": 23,
       "stageBonus": 35,
       "teams": [
         {
@@ -1565,20 +1565,20 @@
           "name": "Spain",
           "iso": "es",
           "record": {
-            "w": 5,
+            "w": 6,
             "d": 1,
             "l": 0,
-            "points": 16,
-            "played": 6
+            "points": 19,
+            "played": 7
           },
-          "matchPoints": 16,
+          "matchPoints": 19,
           "stage": {
             "key": "SEMI_FINALS",
             "label": "Semi-finalist",
             "bonus": 35
           },
           "stageBonus": 35,
-          "total": 51,
+          "total": 54,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -1648,8 +1648,8 @@
             },
             {
               "stage": "SEMI_FINALS",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "W",
               "scoreFor": 2,
               "scoreAgainst": 0,
               "opponent": "France",
