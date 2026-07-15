@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-15T20:37:34.964Z",
+  "generatedAt": "2026-07-15T21:35:53.801Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 101,
-  "liveMatches": 1,
+  "finishedMatches": 102,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -21,9 +21,9 @@
           "record": {
             "w": 5,
             "d": 1,
-            "l": 0,
+            "l": 1,
             "points": 16,
-            "played": 6
+            "played": 7
           },
           "matchPoints": 16,
           "stage": {
@@ -102,10 +102,10 @@
             },
             {
               "stage": "SEMI_FINALS",
-              "status": "LIVE",
-              "result": null,
+              "status": "FINISHED",
+              "result": "L",
               "scoreFor": 1,
-              "scoreAgainst": 0,
+              "scoreAgainst": 2,
               "opponent": "Argentina",
               "opponentIso": "ar",
               "label": "Semi-final",
@@ -942,8 +942,8 @@
     {
       "id": "bev",
       "name": "Bev",
-      "total": 76,
-      "matchPoints": 31,
+      "total": 79,
+      "matchPoints": 34,
       "stageBonus": 45,
       "teams": [
         {
@@ -951,20 +951,20 @@
           "name": "Argentina",
           "iso": "ar",
           "record": {
-            "w": 6,
+            "w": 7,
             "d": 0,
             "l": 0,
-            "points": 18,
-            "played": 6
+            "points": 21,
+            "played": 7
           },
-          "matchPoints": 18,
+          "matchPoints": 21,
           "stage": {
             "key": "SEMI_FINALS",
             "label": "Semi-finalist",
             "bonus": 35
           },
           "stageBonus": 35,
-          "total": 53,
+          "total": 56,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -1034,9 +1034,9 @@
             },
             {
               "stage": "SEMI_FINALS",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 0,
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 2,
               "scoreAgainst": 1,
               "opponent": "England",
               "opponentIso": "gb-eng",
