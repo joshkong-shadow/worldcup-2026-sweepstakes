@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-15T18:05:01.819Z",
+  "generatedAt": "2026-07-15T19:33:08.609Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 101,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -102,10 +102,10 @@
             },
             {
               "stage": "SEMI_FINALS",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "Argentina",
               "opponentIso": "ar",
               "label": "Semi-final",
@@ -1034,10 +1034,10 @@
             },
             {
               "stage": "SEMI_FINALS",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "England",
               "opponentIso": "gb-eng",
               "label": "Semi-final",
