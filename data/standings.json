@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-18T20:11:13.991Z",
+  "generatedAt": "2026-07-18T21:07:23.732Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 102,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -113,10 +113,10 @@
             },
             {
               "stage": "THIRD_PLACE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "France",
               "opponentIso": "fr",
               "label": "Third-place playoff",
@@ -760,10 +760,10 @@
             },
             {
               "stage": "THIRD_PLACE",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "England",
               "opponentIso": "gb-eng",
               "label": "Third-place playoff",
