@@ -1,38 +1,38 @@
 {
-  "generatedAt": "2026-07-18T23:04:01.843Z",
+  "generatedAt": "2026-07-19T00:03:53.994Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
-  "finishedMatches": 102,
-  "liveMatches": 1,
+  "finishedMatches": 103,
+  "liveMatches": 0,
   "unmatchedFeedTeams": [],
   "players": [
     {
       "id": "sa",
       "name": "Sa",
-      "total": 115,
-      "matchPoints": 40,
-      "stageBonus": 75,
+      "total": 128,
+      "matchPoints": 43,
+      "stageBonus": 85,
       "teams": [
         {
           "teamId": "england",
           "name": "England",
           "iso": "gb-eng",
           "record": {
-            "w": 5,
+            "w": 6,
             "d": 1,
             "l": 1,
-            "points": 16,
-            "played": 7
+            "points": 19,
+            "played": 8
           },
-          "matchPoints": 16,
+          "matchPoints": 19,
           "stage": {
-            "key": "FOURTH",
-            "label": "Playing for 3rd",
-            "bonus": 45
+            "key": "THIRD",
+            "label": "3rd Place",
+            "bonus": 55
           },
-          "stageBonus": 45,
-          "total": 61,
+          "stageBonus": 55,
+          "total": 74,
           "matches": [
             {
               "stage": "GROUP_STAGE",
@@ -113,10 +113,10 @@
             },
             {
               "stage": "THIRD_PLACE",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 5,
-              "scoreAgainst": 3,
+              "status": "FINISHED",
+              "result": "W",
+              "scoreFor": 6,
+              "scoreAgainst": 4,
               "opponent": "France",
               "opponentIso": "fr",
               "label": "Third-place playoff",
@@ -668,14 +668,14 @@
           "record": {
             "w": 6,
             "d": 0,
-            "l": 1,
+            "l": 2,
             "points": 18,
-            "played": 7
+            "played": 8
           },
           "matchPoints": 18,
           "stage": {
             "key": "FOURTH",
-            "label": "Playing for 3rd",
+            "label": "4th Place",
             "bonus": 45
           },
           "stageBonus": 45,
@@ -760,10 +760,10 @@
             },
             {
               "stage": "THIRD_PLACE",
-              "status": "LIVE",
-              "result": null,
-              "scoreFor": 3,
-              "scoreAgainst": 5,
+              "status": "FINISHED",
+              "result": "L",
+              "scoreFor": 4,
+              "scoreAgainst": 6,
               "opponent": "England",
               "opponentIso": "gb-eng",
               "label": "Third-place playoff",
