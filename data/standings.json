@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-07-19T18:11:36.628Z",
+  "generatedAt": "2026-07-19T19:34:15.951Z",
   "source": "football-data",
   "tournament": "FIFA World Cup 2026",
   "matchesSeen": 104,
   "finishedMatches": 103,
-  "liveMatches": 0,
+  "liveMatches": 1,
   "unmatchedFeedTeams": [],
   "players": [
     {
@@ -453,10 +453,10 @@
             },
             {
               "stage": "FINAL",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "Spain",
               "opponentIso": "es",
               "label": "Final",
@@ -1078,10 +1078,10 @@
             },
             {
               "stage": "FINAL",
-              "status": "SCHEDULED",
+              "status": "LIVE",
               "result": null,
-              "scoreFor": null,
-              "scoreAgainst": null,
+              "scoreFor": 0,
+              "scoreAgainst": 0,
               "opponent": "Argentina",
               "opponentIso": "ar",
               "label": "Final",
